@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Datenschutzerklärung – Spinando</title>
+  <meta name="description" content="Datenschutzerklärung von Spinando: Informationen zur Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten gemäß DSGVO." />
+  <link rel="canonical" href="https://spinando-casino.net/privacy-policy.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Datenschutzerklärung – Spinando" />
+  <meta property="og:description" content="Informationen zum Datenschutz bei Spinando gemäß den gesetzlichen Bestimmungen." />
+  <meta property="og:url" content="https://spinando-casino.net/privacy-policy.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg:#0b0716;
+      --bg2:#070515;
+      --panel:#120a2a;
+      --panel2:#140b2e;
+      --card:#1a0f3b;
+      --line:rgba(255,255,255,.10);
+      --text:#f6f3ff;
+      --muted:rgba(246,243,255,.78);
+      --muted2:rgba(246,243,255,.62);
+
+      --violet:#7c3aed;
+      --violet2:#5b21b6;
+      --pink:#ec4899;
+      --gold:#fbbf24;
+      --green:#22c55e;
+
+      --shadow:0 16px 44px rgba(0,0,0,.42);
+      --radius:18px;
+      --max:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 65% -10%, rgba(124,58,237,.30), rgba(0,0,0,0) 60%),
+        radial-gradient(900px 520px at -10% 25%, rgba(236,72,153,.16), rgba(0,0,0,0) 55%),
+        linear-gradient(180deg, var(--bg2), var(--bg) 55%, #08051a);
+    }
+
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--gold); text-decoration:underline}
+    img{max-width:100%;display:block}
+
+    .app{display:flex;min-height:100%}
+    .sidebar{
+      width:290px;
+      padding:16px 14px;
+      position:sticky; top:0; height:100vh;
+      background:linear-gradient(180deg, rgba(18,10,42,.92), rgba(7,5,21,.92));
+      border-right:1px solid var(--line);
+    }
+
+    .logo{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:1000;
+      letter-spacing:.2px;
+    }
+    .brand img{
+      width:38px; height:38px; border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .logo small{color:var(--muted2);font-weight:900}
+
+    .nav-box{
+      margin-top:14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .nav-box .h{
+      padding:10px 12px;
+      font-weight:1000;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.20), rgba(236,72,153,.08));
+    }
+    .nav-box a{
+      display:block;
+      padding:10px 12px;
+      color:rgba(246,243,255,.80);
+      border-top:1px solid rgba(255,255,255,.06);
+      font-weight:800;
+      font-size:13px;
+    }
+    .nav-box a:hover{background:rgba(255,255,255,.03)}
+
+    .side-note{
+      margin-top:14px;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .side-note .t{font-weight:1000}
+    .side-note .p{margin-top:6px;font-size:12px;color:var(--muted2);line-height:1.5}
+
+    .main{flex:1;min-width:0}
+    .topbar{
+      position:sticky; top:0; z-index:60;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:rgba(10,6,22,.70);
+      backdrop-filter:blur(10px);
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .top-actions{display:flex; gap:10px; align-items:center}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      font-weight:900;
+      color:rgba(246,243,255,.86);
+      white-space:nowrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:1000;
+      white-space:nowrap;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background:linear-gradient(180deg, rgba(34,197,94,1), rgba(34,197,94,.86));
+      border-color:rgba(0,0,0,.28);
+      color:#06140b;
+    }
+
+    .container{max-width:var(--max); margin:0 auto; padding:18px 16px 28px}
+
+    .hero{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      background:
+        radial-gradient(900px 420px at 30% 10%, rgba(124,58,237,.34), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      margin-bottom:20px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0;
+      min-height:180px;
+    }
+    .hero-left{
+      padding:22px 22px 18px;
+      background:linear-gradient(180deg, rgba(0,0,0,.52), rgba(0,0,0,.14));
+    }
+    h1{
+      margin:14px 0 0;
+      font-size:34px;
+      line-height:1.08;
+      letter-spacing:.2px;
+      font-weight:1100;
+    }
+    .hl{color:var(--gold)}
+    .hero-left p{
+      margin:12px 0 0;
+      color:rgba(246,243,255,.78);
+      font-size:14px;
+      line-height:1.6;
+      max-width:68ch;
+    }
+
+    .section{
+      margin-top:16px;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .section .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.18), rgba(236,72,153,.08));
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .section h2{margin:0;font-size:18px;font-weight:1100}
+    .section .sub{margin:0;color:rgba(246,243,255,.70);font-size:13px;line-height:1.5;max-width:80ch}
+    .section .body{padding:14px 16px 16px}
+    p,li{color:rgba(246,243,255,.78);line-height:1.65;font-size:14px}
+    ul,ol{padding-left:22px;margin:12px 0}
+    li{margin-bottom:6px}
+    strong{color:var(--text); font-weight:1100}
+
+    .info-row{
+      margin:14px 0;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:10px;
+    }
+    .info-pill{
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      padding:10px 12px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      box-shadow:0 10px 24px rgba(0,0,0,.22);
+    }
+    .info-pill .k{font-weight:1000;font-size:13px;color:rgba(246,243,255,.80)}
+    .info-pill .v{font-weight:1100;font-size:13px;color:rgba(246,243,255,.95)}
+    .info-pill .v b{color:var(--gold)}
+
+    footer{
+      margin-top:28px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.22);
+    }
+    .foot{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:18px 16px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    .legal{
+      display:flex; gap:10px; flex-wrap:wrap;
+      font-size:13px;
+      color:rgba(246,243,255,.70);
+      margin-top:10px;
+    }
+    .legal a:hover{text-decoration:underline}
+
+    .to-top{
+      position:fixed;
+      right:16px; bottom:16px;
+      width:46px; height:46px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(124,58,237,.18);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:var(--shadow);
+    }
+
+    .contact-block{
+      background:rgba(124,58,237,.08);
+      border:1px solid rgba(124,58,237,.20);
+      border-radius:16px;
+      padding:16px;
+      margin-top:20px;
+    }
+
+    @media (max-width: 980px){
+      .sidebar{display:none}
+      .foot{grid-template-columns:1fr}
+      .info-row{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- LEFT -->
+    <aside class="sidebar" aria-label="Seitennavigation">
+      <div class="logo">
+        <div class="brand">
+          <img src="/images/logo.png" alt="Spinando Logo" onerror="this.style.display='none'">
+          <div>Spinando</div>
+        </div>
+        <small>Datenschutz</small>
+      </div>
+
+      <div class="nav-box" aria-label="Navigation">
+        <div class="h">Navigation</div>
+        <a href="#einleitung">1. Einleitung</a>
+        <a href="#verantwortliche">2. Verantwortliche Stelle</a>
+        <a href="#datenerhebung">3. Datenerhebung</a>
+        <a href="#zwecke">4. Verarbeitungszwecke</a>
+        <a href="#rechtsgrundlagen">5. Rechtsgrundlagen</a>
+        <a href="#datenspeicherung">6. Datenspeicherung</a>
+        <a href="#datenweitergabe">7. Datenweitergabe</a>
+        <a href="#ihre-rechte">8. Ihre Rechte</a>
+        <a href="#cookies">9. Cookies & Tracking</a>
+        <a href="#sicherheit">10. Datensicherheit</a>
+        <a href="#kontakt">11. Kontakt</a>
+      </div>
+
+      <div class="side-note">
+        <div class="t">Wichtiger Hinweis</div>
+        <div class="p">
+          Diese Datenschutzerklärung dient Informationszwecken. Für rechtsverbindliche Auskünfte konsultieren Sie bitte unsere vollständigen Vertragsbedingungen.
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <div style="font-weight:1000; font-size:15px;">Datenschutzerklärung</div>
+          <div class="top-actions">
+            <span class="pill">🇩🇪 DE</span>
+            <a class="btn" href="/">Zurück zur Hauptseite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- HERO -->
+        <section class="hero" id="intro" aria-label="Hero">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <h1>Datenschutz<span class="hl">erklärung</span></h1>
+              <p>
+                Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten im Rahmen der Nutzung unserer Plattform Spinando. Wir nehmen den Schutz Ihrer Daten sehr ernst und verarbeiten sie ausschließlich im Einklang mit den gesetzlichen Bestimmungen, insbesondere der Datenschutz-Grundverordnung (DSGVO).
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- EINLEITUNG -->
+        <section class="section" id="einleitung" aria-label="Einleitung">
+          <div class="head">
+            <div>
+              <h2>1. Einleitung und Grundsätze</h2>
+              <p class="sub">Unser Verständnis von Datenschutz und Transparenz.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir, die Betreiber von Spinando, sind uns der Bedeutung eines verantwortungsvollen Umgangs mit personenbezogenen Daten bewusst. Unser Handeln orientiert sich an den Grundsätzen der</p>
+            <ul>
+              <li><strong>Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz</strong></li>
+              <li><strong>Zweckbindung</strong> (Daten nur für festgelegte, eindeutige und legitime Zwecke)</li>
+              <li><strong>Datenminimierung</strong> (Erhebung auf das notwendige Maß beschränkt)</li>
+              <li><strong>Speicherbegrenzung</strong> (Löschung nach Erfüllung des Zwecks)</li>
+              <li><strong>Integrität und Vertraulichkeit</strong> (Sicherheit durch technische Maßnahmen)</li>
+            </ul>
+            <p>Mit dieser Erklärung möchten wir Ihnen einen umfassenden Einblick in unsere Datenverarbeitungspraktiken geben.</p>
+          </div>
+        </section>
+
+        <!-- VERANTWORTLICHE -->
+        <section class="section" id="verantwortliche" aria-label="Verantwortliche Stelle">
+          <div class="head">
+            <div>
+              <h2>2. Verantwortliche Stelle</h2>
+              <p class="sub">Wer für die Datenverarbeitung verantwortlich ist.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p><strong>Verantwortlicher im Sinne der DSGVO ist:</strong></p>
+            <div class="contact-block">
+              <p><strong>Spinando Ltd.</strong><br>
+              (Registrierungsanschrift des lizenzierten Betreibers)<br>
+              Beispielstraße 123<br>
+              10115 Berlin, Deutschland<br>
+              <strong>E-Mail für Datenschutzanfragen:</strong> datenschutz@spinando.example<br>
+              <strong>Vertreten durch:</strong> Geschäftsführung</p>
+            </div>
+            <p>Bei allen Fragen zum Datenschutz und zur Ausübung Ihrer Rechte können Sie sich direkt an diese Adresse wenden.</p>
+          </div>
+        </section>
+
+        <!-- DATENERHEBUNG -->
+        <section class="section" id="datenerhebung" aria-label="Datenerhebung">
+          <div class="head">
+            <div>
+              <h2>3. Welche Daten erheben wir?</h2>
+              <p class="sub">Kategorien der von uns verarbeiteten personenbezogenen Daten.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir erheben und verarbeiten verschiedene Kategorien von Daten, die für die Bereitstellung unserer Dienste notwendig sind:</p>
+            <ul>
+              <li><strong>Registrierungs- und Kontodaten:</strong> Vorname, Nachname, Geburtsdatum, vollständige Anschrift, E-Mail-Adresse, Telefonnummer, gewählte Währung, Benutzername und ein von Ihnen gewähltes sicheres Passwort (gehasht gespeichert).</li>
+              <li><strong>Verifikationsdaten (KYC):</strong> Kopie eines amtlichen Ausweisdokuments (z.B. Personalausweis, Reisepass), Kopie eines aktuellen Adressnachweises (z.B. Stromrechnung), ggf. weitere Dokumente zur Vermeidung von Betrug und Geldwäsche gemäß gesetzlicher Vorgaben.</li>
+              <li><strong>Finanztransaktionsdaten:</strong> Details zu Ein- und Auszahlungen (Betrag, Datum, verwendete Zahlungsmethode, Transaktions-ID), Kontoinformationen (z.B. letzte 4 Ziffern der Kreditkarte, E-Wallet-Adresse).</li>
+              <li><strong>Spiel- und Nutzungsdaten:</strong> Informationen über Ihre Spielaktivität (eingesetzte Beträge, Gewinne/Verluste, getätigte Spiele, Sitzungsdauer, Geräteinformationen wie IP-Adresse, Browser-Typ, Betriebssystem).</li>
+              <li><strong>Kommunikationsdaten:</strong> Inhalte von Nachrichten, die Sie über den Live-Chat, E-Mail oder Kontaktformulare an uns senden, sowie Aufzeichnungen von Telefonaten (wo gesetzlich erlaubt und angekündigt).</li>
+              <li><strong>Marketing- und Präferenzdaten:</strong> Ihre Einwilligung zur Werbung, Einstellungen zu Benachrichtigungen und Ihre Teilnahme an Promotionen.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ZWECKE -->
+        <section class="section" id="zwecke" aria-label="Verarbeitungszwecke">
+          <div class="head">
+            <div>
+              <h2>4. Zu welchen Zwecken verarbeiten wir Ihre Daten?</h2>
+              <p class="sub">Die Legitimen Interessen und Notwendigkeiten unserer Datenverarbeitung.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Ihre Daten werden für folgende wesentliche Zwecke verarbeitet:</p>
+            <ol>
+              <li><strong>Vertragserfüllung und Kontoverwaltung:</strong> Zur Erstellung und Verwaltung Ihres Spielerkontos, zur Abwicklung von Ein- und Auszahlungen, zur Bereitstellung der Spiele und zur Gewährleistung des reibungslosen Betriebs unserer Dienste.</li>
+              <li><strong>Erfüllung gesetzlicher Pflichten:</strong> Insbesondere zur Verhinderung von Geldwäsche, Betrug und Finanzkriminalität (KYC-Verfahren), zur Altersverifikation, zur Erfüllung von Steuer- und Meldepflichten sowie zur Einhaltung von Spielsuchtpräventionsvorschriften.</li>
+              <li><strong>Berechtigte Interessen:</strong>
+                <ul>
+                  <li>Verbesserung unserer Website, der App und unserer Dienste.</li>
+                  <li>Durchführung von Sicherheitsanalysen und Betrugserkennung.</li>
+                  <li>Bewertung von Bonitätsrisiken.</li>
+                  <li>Verfolgung und Durchsetzung von rechtlichen Ansprüchen.</li>
+                  <li>Direktwerbung für eigene ähnliche Produkte (sofern Sie nicht widersprochen haben).</li>
+                </ul>
+              </li>
+              <li><strong>Basierend auf Ihrer Einwilligung:</strong> Für Marketingaktivitäten wie den Versand von Newslettern, personalisierten Angeboten und Promotionen per E-Mail oder SMS. Jede Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- RECHTSGRUNDLAGEN -->
+        <section class="section" id="rechtsgrundlagen" aria-label="Rechtsgrundlagen">
+          <div class="head">
+            <div>
+              <h2>5. Rechtsgrundlagen der Verarbeitung</h2>
+              <p class="sub">Die rechtliche Basis für unsere Datenverarbeitung.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Gemäß Art. 6 DSGVO stützt sich die Verarbeitung Ihrer personenbezogenen Daten auf eine oder mehrere der folgenden Rechtsgrundlagen:</p>
+            <div class="info-row">
+              <div class="info-pill"><div class="k">Vertragserfüllung</div><div class="v"><b>Art. 6(1)(b) DSGVO</b></div></div>
+              <div class="info-pill"><div class="k">Gesetzliche Pflicht</div><div class="v"><b>Art. 6(1)(c) DSGVO</b></div></div>
+              <div class="info-pill"><div class="k">Berechtigtes Interesse</div><div class="v"><b>Art. 6(1)(f) DSGVO</b></div></div>
+              <div class="info-pill"><div class="k">Ihre Einwilligung</div><div class="v"><b>Art. 6(1)(a) DSGVO</b></div></div>
+            </div>
+            <p>Die Verarbeitung sensibler Daten (im Rahmen des KYC) erfolgt zur Erfüllung gesetzlicher Verpflichtungen im Bereich der Geldwäschebekämpfung (Art. 9(2)(g) DSGVO i.V.m. nationalem Recht).</p>
+          </div>
+        </section>
+
+        <!-- DATENSPEICHERUNG -->
+        <section class="section" id="datenspeicherung" aria-label="Datenspeicherung">
+          <div class="head">
+            <div>
+              <h2>6. Dauer der Datenspeicherung</h2>
+              <p class="sub">Wie lange bewahren wir Ihre Daten auf?</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die Erfüllung der Verarbeitungszwecke notwendig ist oder wie es gesetzliche Aufbewahrungspflichten vorschreiben.</p>
+            <ul>
+              <li><strong>Kontodaten und Transaktionsdaten:</strong> Mindestens für die Dauer der Geschäftsbeziehung zuzüglich einer gesetzlichen Aufbewahrungsfrist von 5 bis 10 Jahren nach Beendigung des Kontos (je nach nationaler steuer- und handelsrechtlicher Vorgabe).</li>
+              <li><strong>KYC-Dokumente:</strong> Mindestens 5 Jahre nach Beendigung der Geschäftsbeziehung, gemäß geldwäscherechtlicher Vorschriften.</li>
+              <li><strong>Kommunikationsdaten:</strong> Bis zur vollständigen Abwicklung Ihrer Anfrage, maximal 3 Jahre, es sei denn, eine längere Aufbewahrung ist aus rechtlichen Gründen erforderlich.</li>
+              <li><strong>Spieldaten für Spielerschutz:</strong> Werden dauerhaft gespeichert, um eine Selbstausschlussliste zu führen und problematisches Spielverhalten zu erkennen und zu verhindern.</li>
+            </ul>
+            <p>Nach Ablauf der Speicherfristen werden Ihre Daten systematisch und sicher gelöscht oder anonymisiert.</p>
+          </div>
+        </section>
+
+        <!-- DATENWEITERGABE -->
+        <section class="section" id="datenweitergabe" aria-label="Datenweitergabe">
+          <div class="head">
+            <div>
+              <h2>7. Datenweitergabe an Dritte</h2>
+              <p class="sub">Wer hat unter Umständen Zugang zu Ihren Daten?</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Eine Weitergabe Ihrer Daten erfolgt nur in folgenden Fällen und an folgende Kategorien von Empfängern:</p>
+            <ul>
+              <li><strong>Zahlungsdienstleister:</strong> Banken, E-Wallet-Anbieter (z.B. Skrill, Neteller), Kreditkartenunternehmen und Abrechnungsstellen, um Finanztransaktionen durchzuführen.</li>
+              <li><strong>Software- und Serviceanbieter:</strong> Externe IT-Dienstleister für Hosting, Wartung, Betrugserkennung und Kundensupport, die als Auftragsverarbeiter (Art. 28 DSGVO) nach unseren strengen Weisungen handeln.</li>
+              <li><strong>Regulierungsbehörden und staatliche Stellen:</strong> Sofern dies zur Erfüllung gesetzlicher Meldepflichten (z.B. bei Verdacht auf Geldwäsche) oder aufgrund gerichtlicher Anordnung erforderlich ist.</li>
+              <li><strong>Wirtschaftsauskunfteien/Bonitätsprüfung:</strong> Um Betrug zu verhindern und unsere finanziellen Risiken zu bewerten.</li>
+              <li><strong>Rechtsberater und Wirtschaftsprüfer:</strong> Zur Wahrung unserer rechtlichen Interessen oder zur Erfüllung gesetzlicher Prüfungspflichten.</li>
+            </ul>
+            <p><strong>Drittlandübermittlung:</strong> Einige Empfänger haben ihren Sitz oder verarbeiten Daten in Ländern außerhalb der EU/EWR („Drittländer“). In diesen Fällen stellen wir sicher, dass entweder ein Angemessenheitsbeschluss der EU-Kommission vorliegt oder geeignete Garantien (z.B. Standardvertragsklauseln der EU) vereinbart wurden, um ein angemessenes Datenschutzniveau zu gewährleisten.</p>
+          </div>
+        </section>
+
+        <!-- IHRE RECHTE -->
+        <section class="section" id="ihre-rechte" aria-label="Ihre Rechte">
+          <div class="head">
+            <div>
+              <h2>8. Ihre Rechte als Betroffener</h2>
+              <p class="sub">Welche Rechte Sie gemäß DSGVO haben.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+            <ul>
+              <li><strong>Recht auf Auskunft (Art. 15 DSGVO):</strong> Sie können eine Bestätigung verlangen, ob und welche Daten wir von Ihnen verarbeiten, sowie eine Kopie dieser Daten.</li>
+              <li><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Sie können die Berichtigung unrichtiger oder Vervollständigung unvollständiger Daten verlangen.</li>
+              <li><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Unter bestimmten Voraussetzungen (z.B. wenn die Daten für den Zweck nicht mehr benötigt werden) können Sie die Löschung Ihrer Daten verlangen.</li>
+              <li><strong>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO):</strong> Sie können unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer Daten verlangen (z.B. wenn Sie die Richtigkeit bestreiten).</li>
+              <li><strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO):</strong> Sie haben das Recht, Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu verlangen, wo technisch machbar.</li>
+              <li><strong>Recht auf Widerspruch (Art. 21 DSGVO):</strong> Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Ihrer Daten Widerspruch einzulegen, wenn diese auf berechtigtem Interesse (Art. 6(1)(f) DSGVO) beruht. Dies gilt auch für Profiling. Im Falle eines Direktmarketing-Widerspruchs wird die Verarbeitung unverzüglich eingestellt.</li>
+              <li><strong>Recht, eine Einwilligung zu widerrufen (Art. 7(3) DSGVO):</strong> Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt davon unberührt.</li>
+              <li><strong>Beschwerderecht bei einer Aufsichtsbehörde (Art. 77 DSGVO):</strong> Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem Mitgliedstaat Ihres Wohnsitzes, Ihres Arbeitsplatzes oder des Ortes des mutmaßlichen Verstoßes. Für Deutschland ist dies z.B. der Landesbeauftragte für den Datenschutz in Ihrem Bundesland.</li>
+            </ul>
+            <p>Um Ihre Rechte auszuüben, wenden Sie sich bitte an die unter Punkt 2 genannte Kontaktadresse. Wir werden Ihren Antrag unverzüglich, spätestens innerhalb eines Monats, bearbeiten.</p>
+          </div>
+        </section>
+
+        <!-- COOKIES -->
+        <section class="section" id="cookies" aria-label="Cookies & Tracking">
+          <div class="head">
+            <div>
+              <h2>9. Cookies und Tracking-Technologien</h2>
+              <p class="sub">Wie wir Technologien zur Verbesserung unserer Dienste einsetzen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Unsere Website und App verwenden Cookies und ähnliche Tracking-Technologien. Dies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden.</p>
+            <p><strong>Wir verwenden Cookies für:</strong></p>
+            <ul>
+              <li><strong>Notwendige (essenzielle) Cookies:</strong> Für den Betrieb der Seite (z.B. Login, Warenkorb, Sicherheit). Diese können nicht deaktiviert werden.</li>
+              <li><strong>Präferenz-Cookies:</strong> Um Ihre Einstellungen (z.B. Sprache, Währung) zu speichern.</li>
+              <li><strong>Statistik-Cookies:</strong> Zur anonymisierten Analyse des Nutzerverhaltens und zur Verbesserung unserer Leistung (z.B. Google Analytics).</li>
+              <li><strong>Marketing-Cookies:</strong> Um Ihnen relevante Werbung innerhalb und außerhalb unserer Plattform anzuzeigen und die Wirksamkeit von Kampagnen zu messen.</li>
+            </ul>
+            <p>Bei Ihrem ersten Besuch werden Sie über den Einsatz von nicht-notwendigen Cookies informiert und können Ihre Einwilligung erteilen oder verweigern. Sie können Ihre Cookie-Einstellungen jederzeit über den Link in der Fußzeile unserer Website ändern. Bitte beachten Sie, dass das Deaktivieren bestimmter Cookies die Funktionalität unserer Website einschränken kann.</p>
+          </div>
+        </section>
+
+        <!-- SICHERHEIT -->
+        <section class="section" id="sicherheit" aria-label="Datensicherheit">
+          <div class="head">
+            <div>
+              <h2>10. Datensicherheit</h2>
+              <p class="sub">Die Maßnahmen, die wir zum Schutz Ihrer Daten ergreifen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten vor Verlust, Zerstörung, Manipulation und unberechtigtem Zugriff zu schützen. Diese Maßnahmen werden regelmäßig überprüft und dem technologischen Fortschritt angepasst.</p>
+            <p>Zu unseren Sicherheitsmaßnahmen gehören unter anderem:</p>
+            <ul>
+              <li>Verschlüsselung der Datenübertragung mittels SSL/TLS-Technologie.</li>
+              <li>Strenge Zugriffskontrollen und Authentifizierungsverfahren.</li>
+              <li>Regelmäßige Sicherheitsüberprüfungen und Penetrationstests unserer Systeme.</li>
+              <li>Schulung unserer Mitarbeiter im Umgang mit personenbezogenen Daten.</li>
+              <li>Physische Sicherheitsvorkehrungen in unseren Rechenzentren.</li>
+            </ul>
+            <p>Trotz aller Sorgfalt kann eine absolute Sicherheit im Internet nicht garantiert werden. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann.</p>
+          </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section class="section" id="kontakt" aria-label="Kontakt">
+          <div class="head">
+            <div>
+              <h2>11. Kontakt und Aktualisierung</h2>
+              <p class="sub">So erreichen Sie uns und wie wir Änderungen mitteilen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <div class="contact-block">
+              <p><strong>Für alle Fragen und Anträge bezüglich des Datenschutzes:</strong><br>
+              <strong>E-Mail:</strong> datenschutz@spinando.example<br>
+              <strong>Postanschrift:</strong> Spinando Ltd., Datenschutzbeauftragter, Beispielstraße 123, 10115 Berlin, Deutschland</p>
+            </div>
+            <p><strong>Aktualisierungen dieser Datenschutzerklärung:</strong></p>
+            <p>Diese Datenschutzerklärung wurde zuletzt am 05.01.2026 aktualisiert. Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie geänderten Rechtslagen oder bei Änderungen des Dienstes sowie unserer Datenverarbeitung anzupassen. Die jeweils aktuelle Version finden Sie stets auf dieser Seite. Bei wesentlichen Änderungen werden wir Sie auf geeignete Weise (z.B. per E-Mail oder durch einen Hinweis in Ihrem Konto) informieren.</p>
+          </div>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="foot">
+          <div>
+            <div style="font-weight:1100;">© <span id="y"></span> Spinando Informationsportal</div>
+            <div style="margin-top:6px;color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              Diese Datenschutzerklärung ist Teil unseres Informationsangebots.
+            </div>
+            <div class="legal">
+              <a href="/">Startseite</a><span style="opacity:.5">•</span>
+              <a href="/terms.html">AGB</a><span style="opacity:.5">•</span>
+              <a href="/disclaimer.html">Disclaimer</a><span style="opacity:.5">•</span>
+              <a href="/responsible-gaming.html">Verantwortungsvolles Spielen</a>
+            </div>
+          </div>
+
+          <div>
+            <div style="color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              <strong>Letzte Aktualisierung:</strong> 05. Januar 2026<br>
+              Diese Seite verwendet notwendige Cookies für den Betrieb.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="to-top" href="#intro" aria-label="Nach oben">↑</a>
+
+      <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+      </script>
+    </main>
+  </div>
+</body>
+</html>

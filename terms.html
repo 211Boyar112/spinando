@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Allgemeine Geschäftsbedingungen (AGB) – Spinando</title>
+  <meta name="description" content="Allgemeine Geschäftsbedingungen (AGB) von Spinando: Regeln für die Nutzung der Plattform, Kontoeröffnung, Ein- und Auszahlungen, Bonusbedingungen und mehr." />
+  <link rel="canonical" href="https://spinando-casino.net/terms.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Allgemeine Geschäftsbedingungen (AGB) – Spinando" />
+  <meta property="og:description" content="Offizielle Nutzungsbedingungen für die Spinando Plattform." />
+  <meta property="og:url" content="https://spinando-casino.net/terms.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg:#0b0716;
+      --bg2:#070515;
+      --panel:#120a2a;
+      --panel2:#140b2e;
+      --card:#1a0f3b;
+      --line:rgba(255,255,255,.10);
+      --text:#f6f3ff;
+      --muted:rgba(246,243,255,.78);
+      --muted2:rgba(246,243,255,.62);
+
+      --violet:#7c3aed;
+      --violet2:#5b21b6;
+      --pink:#ec4899;
+      --gold:#fbbf24;
+      --green:#22c55e;
+
+      --shadow:0 16px 44px rgba(0,0,0,.42);
+      --radius:18px;
+      --max:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 65% -10%, rgba(124,58,237,.30), rgba(0,0,0,0) 60%),
+        radial-gradient(900px 520px at -10% 25%, rgba(236,72,153,.16), rgba(0,0,0,0) 55%),
+        linear-gradient(180deg, var(--bg2), var(--bg) 55%, #08051a);
+    }
+
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--gold); text-decoration:underline}
+    img{max-width:100%;display:block}
+
+    .app{display:flex;min-height:100%}
+    .sidebar{
+      width:290px;
+      padding:16px 14px;
+      position:sticky; top:0; height:100vh;
+      background:linear-gradient(180deg, rgba(18,10,42,.92), rgba(7,5,21,.92));
+      border-right:1px solid var(--line);
+    }
+
+    .logo{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:1000;
+      letter-spacing:.2px;
+    }
+    .brand img{
+      width:38px; height:38px; border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .logo small{color:var(--muted2);font-weight:900}
+
+    .nav-box{
+      margin-top:14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .nav-box .h{
+      padding:10px 12px;
+      font-weight:1000;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.20), rgba(236,72,153,.08));
+    }
+    .nav-box a{
+      display:block;
+      padding:10px 12px;
+      color:rgba(246,243,255,.80);
+      border-top:1px solid rgba(255,255,255,.06);
+      font-weight:800;
+      font-size:13px;
+    }
+    .nav-box a:hover{background:rgba(255,255,255,.03)}
+
+    .side-note{
+      margin-top:14px;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .side-note .t{font-weight:1000}
+    .side-note .p{margin-top:6px;font-size:12px;color:var(--muted2);line-height:1.5}
+
+    .main{flex:1;min-width:0}
+    .topbar{
+      position:sticky; top:0; z-index:60;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:rgba(10,6,22,.70);
+      backdrop-filter:blur(10px);
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .top-actions{display:flex; gap:10px; align-items:center}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      font-weight:900;
+      color:rgba(246,243,255,.86);
+      white-space:nowrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:1000;
+      white-space:nowrap;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background:linear-gradient(180deg, rgba(34,197,94,1), rgba(34,197,94,.86));
+      border-color:rgba(0,0,0,.28);
+      color:#06140b;
+    }
+
+    .container{max-width:var(--max); margin:0 auto; padding:18px 16px 28px}
+
+    .hero{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      background:
+        radial-gradient(900px 420px at 30% 10%, rgba(124,58,237,.34), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      margin-bottom:20px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0;
+      min-height:180px;
+    }
+    .hero-left{
+      padding:22px 22px 18px;
+      background:linear-gradient(180deg, rgba(0,0,0,.52), rgba(0,0,0,.14));
+    }
+    h1{
+      margin:14px 0 0;
+      font-size:34px;
+      line-height:1.08;
+      letter-spacing:.2px;
+      font-weight:1100;
+    }
+    .hl{color:var(--gold)}
+    .hero-left p{
+      margin:12px 0 0;
+      color:rgba(246,243,255,.78);
+      font-size:14px;
+      line-height:1.6;
+      max-width:68ch;
+    }
+
+    .section{
+      margin-top:16px;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .section .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.18), rgba(236,72,153,.08));
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .section h2{margin:0;font-size:18px;font-weight:1100}
+    .section .sub{margin:0;color:rgba(246,243,255,.70);font-size:13px;line-height:1.5;max-width:80ch}
+    .section .body{padding:14px 16px 16px}
+    p,li{color:rgba(246,243,255,.78);line-height:1.65;font-size:14px}
+    ul,ol{padding-left:22px;margin:12px 0}
+    li{margin-bottom:6px}
+    strong{color:var(--text); font-weight:1100}
+
+    .info-box{
+      background:rgba(124,58,237,.08);
+      border:1px solid rgba(124,58,237,.20);
+      border-radius:16px;
+      padding:16px;
+      margin:16px 0;
+    }
+
+    .terms-list{
+      counter-reset: section;
+      margin-top: 10px;
+    }
+    .terms-list > li {
+      counter-increment: section;
+      list-style-type: none;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+    .terms-list > li:before {
+      content: counter(section) ".";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 1100;
+      color: var(--gold);
+      font-size: 16px;
+    }
+    .terms-list ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+    .terms-list ul li {
+      list-style-type: disc;
+      margin-bottom: 4px;
+    }
+
+    footer{
+      margin-top:28px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.22);
+    }
+    .foot{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:18px 16px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    .legal{
+      display:flex; gap:10px; flex-wrap:wrap;
+      font-size:13px;
+      color:rgba(246,243,255,.70);
+      margin-top:10px;
+    }
+    .legal a:hover{text-decoration:underline}
+
+    .to-top{
+      position:fixed;
+      right:16px; bottom:16px;
+      width:46px; height:46px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(124,58,237,.18);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:var(--shadow);
+    }
+
+    @media (max-width: 980px){
+      .sidebar{display:none}
+      .foot{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- LEFT -->
+    <aside class="sidebar" aria-label="Seitennavigation">
+      <div class="logo">
+        <div class="brand">
+          <img src="/images/logo.png" alt="Spinando Logo" onerror="this.style.display='none'">
+          <div>Spinando</div>
+        </div>
+        <small>AGB</small>
+      </div>
+
+      <div class="nav-box" aria-label="Navigation">
+        <div class="h">Inhaltsübersicht</div>
+        <a href="#einleitung">1. Geltungsbereich</a>
+        <a href="#konto">2. Kontoeröffnung</a>
+        <a href="#einzahlungen">3. Einzahlungen</a>
+        <a href="#auszahlungen">4. Auszahlungen</a>
+        <a href="#bonus">5. Bonusbedingungen</a>
+        <a href="#spiele">6. Spiele & Wetten</a>
+        <a href="#haftung">7. Haftung</a>
+        <a href="#kontosperrung">8. Kontosperrung</a>
+        <a href="#streitbeilegung">9. Streitbeilegung</a>
+        <a href="#schluss">10. Schlussbestimmungen</a>
+      </div>
+
+      <div class="side-note">
+        <div class="t">Wichtiger Hinweis</div>
+        <div class="p">
+          Bitte lesen Sie diese AGB sorgfältig durch. Mit der Registrierung und Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen vollständig einverstanden.
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <div style="font-weight:1000; font-size:15px;">Allgemeine Geschäftsbedingungen (AGB)</div>
+          <div class="top-actions">
+            <span class="pill">🇩🇪 DE</span>
+            <a class="btn" href="/">Zurück zur Hauptseite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- HERO -->
+        <section class="hero" id="intro" aria-label="Hero">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <h1>Allgemeine Geschäftsbedingungen <span class="hl">(AGB)</span></h1>
+              <p>
+                Diese Allgemeinen Geschäftsbedingungen (AGB) regeln das Vertragsverhältnis zwischen Ihnen als Nutzer und Spinando Ltd. als Betreiber der Online-Gaming-Plattform. Sie gelten für alle Nutzer unserer Dienste und sind integraler Bestandteil des Nutzungsvertrages.
+              </p>
+              <div class="info-box">
+                <p><strong>Letzte Aktualisierung:</strong> 05. Januar 2026</p>
+                <p>Durch die Registrierung eines Kontos und die Nutzung der Dienste von Spinando erkennen Sie diese AGB ausdrücklich an und verpflichten sich, diese einzuhalten.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EINLEITUNG -->
+        <section class="section" id="einleitung" aria-label="Geltungsbereich">
+          <div class="head">
+            <div>
+              <h2>1. Geltungsbereich und Vertragspartner</h2>
+              <p class="sub">Für wen und unter welchen Bedingungen gelten diese AGB?</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Vertragspartner</strong>
+                <p>Vertragspartner ist Spinando Ltd., eingetragen unter der Adresse Beispielstraße 123, 10115 Berlin, Deutschland (nachfolgend "Spinando", "wir" oder "uns").</p>
+              </li>
+              <li>
+                <strong>Geltungsbereich</strong>
+                <p>Diese AGB gelten für die Nutzung der auf der Website spinando-casino.net und der dazugehörigen mobilen Version angebotenen Online-Glücksspiele, inklusive aller damit verbundenen Dienste wie Ein- und Auszahlungen, Bonusangebote und Kundensupport.</p>
+              </li>
+              <li>
+                <strong>Rechtskonforme Nutzung</strong>
+                <p>Die Nutzung unserer Dienste ist nur in Ländern gestattet, in denen Online-Glücksspiele gesetzlich erlaubt sind. Es liegt in Ihrer alleinigen Verantwortung, sich über die Rechtslage in Ihrem Wohnsitzland zu informieren und einzuhalten. Spinando behält sich das Recht vor, Spieler aus Ländern, in denen der Betrieb nicht erlaubt ist, auszuschließen.</p>
+              </li>
+              <li>
+                <strong>Mindestalter</strong>
+                <p>Zur Nutzung unserer Dienste müssen Sie das gesetzlich vorgeschriebene Mindestalter für Glücksspiele in Ihrem Land erreicht haben. In der Regel beträgt dieses Mindestalter 18 Jahre. Wir behalten uns das Recht vor, jederzeit einen Altersnachweis zu verlangen.</p>
+              </li>
+              <li>
+                <strong>Änderung der AGB</strong>
+                <p>Spinando behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen werden Ihnen per E-Mail oder durch einen deutlichen Hinweis auf unserer Website mitgeteilt. Sofern Sie den Änderungen nicht innerhalb von 14 Tagen nach Benachrichtigung widersprechen, gelten sie als akzeptiert. Im Falle eines Widerspruchs ist Spinando berechtigt, das Vertragsverhältnis zu beenden.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- KONTO -->
+        <section class="section" id="konto" aria-label="Kontoeröffnung">
+          <div class="head">
+            <div>
+              <h2>2. Kontoeröffnung und -führung</h2>
+              <p class="sub">Regeln für die Registrierung und Nutzung Ihres Spinando Kontos.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Einzelkonto</strong>
+                <p>Jeder Nutzer darf nur ein Spielerkonto bei Spinando führen. Mehrfachregistrierungen sind strengstens untersagt und führen zur sofortigen Sperrung aller betroffenen Konten und dem Einbehalt etwaiger Guthaben.</p>
+              </li>
+              <li>
+                <strong>Registrierungsprozess</strong>
+                <p>Bei der Registrierung müssen Sie wahrheitsgemäße, vollständige und aktuelle Angaben zu Ihrer Person machen (Name, Adresse, Geburtsdatum, E-Mail, etc.). Sie sind verpflichtet, diese Angaben bei Änderungen unverzüglich zu aktualisieren.</p>
+              </li>
+              <li>
+                <strong>Verifikation (KYC)</strong>
+                <p>Spinando ist gesetzlich verpflichtet, Ihre Identität zu überprüfen. Wir können Sie jederzeit auffordern, Kopien von Ausweisdokumenten (Personalausweis, Reisepass) und Adressnachweisen (Stromrechnung, Bankauszug) bereitzustellen. Bis zur erfolgreichen Verifikation können Auszahlungen gesperrt werden. Die Verwendung gefälschter oder gestohlener Dokumente ist strafbar und führt zur Kontosperrung.</p>
+              </li>
+              <li>
+                <strong>Kontozugangsdaten</strong>
+                <p>Sie sind allein verantwortlich für die Vertraulichkeit Ihrer Zugangsdaten (Benutzername, Passwort). Alle Aktivitäten, die über Ihr Konto getätigt werden, gelten als von Ihnen autorisiert. Melden Sie den Verlust oder Missbrauch Ihrer Daten umgehend an unseren Support.</p>
+              </li>
+              <li>
+                <strong>Personengebundenes Konto</strong>
+                <p>Ihr Konto ist nicht übertragbar. Sie dürfen es nicht an Dritte verkaufen, verleihen oder anderweitig zur Nutzung überlassen. Das Spielen auf einem Konto, das auf eine andere Person registriert ist, ist untersagt.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- EINZAHLUNGEN -->
+        <section class="section" id="einzahlungen" aria-label="Einzahlungen">
+          <div class="head">
+            <div>
+              <h2>3. Einzahlungen und Kontoführung</h2>
+              <p class="sub">Wie Sie Geld auf Ihr Spielerkonto einzahlen und verwalten.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Verfügbare Methoden</strong>
+                <p>Einzahlungen können über die auf unserer Website angegebenen Zahlungsmethoden erfolgen (z.B. Kreditkarte, E-Wallets, Banküberweisung, Kryptowährungen). Spinando behält sich das Recht vor, bestimmte Methoden je nach Land oder Spielerstatus einzuschränken.</p>
+              </li>
+              <li>
+                <strong>Bonität des Spielers</strong>
+                <p>Sie versichern, dass die von Ihnen für Einzahlungen verwendeten Mittel rechtmäßig erworben wurden und Sie über die notwendige Verfügungsbefugnis verfügen. Die Nutzung von Kreditkarten oder Zahlungsmitteln Dritter ohne deren ausdrückliche Zustimmung ist untersagt.</p>
+              </li>
+              <li>
+                <strong>Gebühren</strong>
+                <p>Spinando erhebt in der Regel keine Gebühren für Einzahlungen. Etwaige Gebühren Ihres Zahlungsdienstleisters gehen zu Ihren Lasten. Über mögliche Gebühren informieren wir transparent im Kassenbereich.</p>
+              </li>
+              <li>
+                <strong>Mindest-/Höchsteinzahlung</strong>
+                <p>Es gelten die jeweils aktuell auf der Website ausgewiesenen Mindest- und Höchstbeträge für Einzahlungen. Spinando kann diese Limits nach eigenem Ermessen und unter Beachtung gesetzlicher Vorgaben ändern.</p>
+              </li>
+              <li>
+                <strong>Sofortige Verfügbarkeit</strong>
+                <p>Eingezahlte Beträge stehen, sobald die Transaktion von unserem System bestätigt wurde, unverzüglich als Spielguthaben zur Verfügung. Bei einigen Methoden (z.B. Banküberweisung) kann dies bis zu mehreren Werktagen dauern.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- AUSZAHLUNGEN -->
+        <section class="section" id="auszahlungen" aria-label="Auszahlungen">
+          <div class="head">
+            <div>
+              <h2>4. Auszahlungen von Gewinnen</h2>
+              <p class="sub">Bedingungen für die Beantragung und Auszahlung Ihrer Gewinne.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Auszahlungsvoraussetzungen</strong>
+                <p>Um eine Auszahlung zu beantragen, müssen Sie:
+                  <ul>
+                    <li>Ihr Konto vollständig verifiziert haben (KYC).</li>
+                    <li>Alle Bonus- und Umsatzbedingungen (wenn zutreffend) erfüllt haben.</li>
+                    <li>Einen Auszahlungsantrag über Ihren Account stellen.</li>
+                  </ul>
+                </p>
+              </li>
+              <li>
+                <strong>Auszahlungsmethoden</strong>
+                <p>Gewinne werden grundsätzlich auf die Methode zurücküberwiesen, mit der die zugehörige Einzahlung getätigt wurde („Same Method Policy“). Abweichungen sind nach Prüfung und auf Anfrage möglich. Spinando kann die Auszahlung auf mehrere Transaktionen aufteilen.</p>
+              </li>
+              <li>
+                <strong>Auszahlungslimits</strong>
+                <p>Es gelten die auf der Website veröffentlichten täglichen, wöchentlichen und monatlichen Auszahlungslimits. Spinando behält sich das Recht vor, diese Limits aus Sicherheits- oder regulatorischen Gründen anzupassen.</p>
+              </li>
+              <li>
+                <strong>Bearbeitungszeiten</strong>
+                <p>Spinando bearbeitet Auszahlungsanträge in der Regel innerhalb von 24-48 Stunden nach Antragstellung. Die tatsächliche Gutschrift auf Ihrem Konto hängt von der gewählten Zahlungsmethode und deren Bearbeitungszeiten ab (E-Wallets: oft innerhalb von Stunden, Banküberweisung: 3-5 Werktage).</p>
+              </li>
+              <li>
+                <strong>Rückbuchungen/Chargebacks</strong>
+                <p>Im Falle einer Rückbuchung (Chargeback) einer Einzahlung behält sich Spinando das Recht vor, alle daraus resultierenden Gewinne zu stornieren, Ihr Konto zu sperren und rechtliche Schritte einzuleiten. Zusätzlich können Verwaltungsgebühren anfallen.</p>
+              </li>
+              <li>
+                <strong>Steuern</strong>
+                <p>Sie sind allein verantwortlich für die korrekte Meldung und Zahlung etwaiger Steuern auf Ihre Gewinne in Ihrem Wohnsitzland. Spinando übernimmt keine Haftung für steuerliche Verpflichtungen der Spieler.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- BONUS -->
+        <section class="section" id="bonus" aria-label="Bonusbedingungen">
+          <div class="head">
+            <div>
+              <h2>5. Bonus- und Promotionsbedingungen</h2>
+              <p class="sub">Spezifische Regeln für alle Bonusangebote und Promotionen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <div class="info-box">
+              <p><strong>Hinweis:</strong> Diese allgemeinen Bonusbedingungen werden durch die spezifischen Bedingungen jeder einzelnen Promotion ergänzt. Im Falle eines Widerspruchs haben die spezifischen Bedingungen Vorrang.</p>
+            </div>
+            <ol class="terms-list">
+              <li>
+                <strong>Willkommensbonus</strong>
+                <p>Der Willkommensbonus steht nur neuen Spielern für ihre erste Einzahlung zur Verfügung. Um den Bonus zu erhalten, muss er während des Einzahlvorgangs aktiviert werden. Der Bonus und das eingezahlte Geld unterliegen Umsatzbedingungen („Wager“), die vor einer Auszahlung erfüllt werden müssen.</p>
+              </li>
+              <li>
+                <strong>Umsatzbedingungen (Wager)</strong>
+                <p>Bevor Bonusgeld oder daraus resultierende Gewinne ausgezahlt werden können, muss ein bestimmtes Umsatzmultiplikator erreicht werden. Beispiel: Bei einem 100% Bonus bis zu 100€ mit 35x Wager muss ein Gesamtumsatz von (Einzahlung + Bonus) x 35 = (100+100)x35 = 7.000€ erreicht werden. Die genauen Multiplikatoren und geltenden Spiele sind den jeweiligen Bonusbedingungen zu entnehmen.</p>
+              </li>
+              <li>
+                <strong>Spielbeschränkungen</strong>
+                <p>Nicht alle Spiele tragen zu 100% zu den Umsatzbedingungen bei. Oft tragen Slots voll, während Tischspiele wie Blackjack oder Roulette nur zu einem geringen Prozentsatz (z.B. 10%) oder gar nicht beitragen. Bitte prüfen Sie die jeweiligen Bedingungen.</p>
+              </li>
+              <li>
+                <strong>Maximaler Einsatz</strong>
+                <p>Während der Umsatzerfüllung eines aktiven Bonus gelten oft reduzierte maximale Einsatzlimits pro Runde (z.B. 5€). Das Überschreiten dieses Limits kann zur Aberkennung des Bonus und aller damit erzielten Gewinne führen.</p>
+              </li>
+              <li>
+                <strong>Ein Bonus pro Spieler/Haushalt</strong>
+                <p>In der Regel kann nur ein Bonus pro Spieler, IP-Adresse, Haushalt oder Zahlungsmethode in Anspruch genommen werden. Der Missbrauch von Bonusangeboten („Bonus Hunting“) ist strengstens untersagt und führt zur Sperrung des Kontos und Einbehalt aller Gewinne.</p>
+              </li>
+              <li>
+                <strong>Bonusverfall</strong>
+                <p>Bonusgelder und Freispiele unterliegen oft einer zeitlichen Gültigkeit (z.B. 30 Tage). Nicht genutzte oder nicht umgesetzte Boni verfallen nach Ablauf dieser Frist automatisch.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- SPIELE -->
+        <section class="section" id="spiele" aria-label="Spiele & Wetten">
+          <div class="head">
+            <div>
+              <h2>6. Spiele, Wetten und Spielregeln</h2>
+              <p class="sub">Regeln für die Teilnahme an Spielen und die Gültigkeit von Wetten.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Spielregeln</strong>
+                <p>Die auf unserer Website angebotenen Spiele unterliegen ihren spezifischen Regeln, die in den jeweiligen Spielbeschreibungen oder Hilfebereichen nachgelesen werden können. Durch die Teilnahme an einem Spiel akzeptieren Sie diese Regeln.</p>
+              </li>
+              <li>
+                <strong>Technische Störungen</strong>
+                <p>Spinando haftet nicht für Verluste, die durch technische Störungen, Verbindungsabbrüche, Fehler in der Software oder höhere Gewalt entstehen. Wetten, die unter solchen Bedingungen getätigt wurden, können für ungültig erklärt und storniert werden. Im Falle eines offensichtlichen Softwarefehlers ist Spinando berechtigt, die betroffene Wette zu annullieren und etwaige Auszahlungen rückgängig zu machen.</p>
+              </li>
+              <li>
+                <strong>Fehler in der Auszahlungsquote</strong>
+                <p>Sollte aufgrund eines offensichtlichen Fehlers eine falsche Auszahlungsquote angezeigt oder ein Gewinn fälschlicherweise gutgeschrieben werden, behält sich Spinando das Recht vor, die betroffene Transaktion zu korrigieren und den korrekten Betrag zu berechnen.</p>
+              </li>
+              <li>
+                <strong>Verbotene Spielweisen</strong>
+                <p>Die Nutzung von automatisierten Programmen (Bots), Skripten oder anderen technischen Hilfsmitteln, die einen unfairen Vorteil verschaffen, ist strengstens untersagt. Ebenso ist das Ausnutzen von Softwarefehlern (Exploits), Absprachen (Kollusion) oder andere Formen des Betrugs verboten und führt zur sofortigen Kontosperrung und Einbehalt aller Guthaben.</p>
+              </li>
+              <li>
+                <strong>Unterbrechung der Dienste</strong>
+                <p>Spinando behält sich das Recht vor, einzelne Spiele oder den gesamten Dienst jederzeit ohne Vorankündigung zu unterbrechen, zu ändern oder einzustellen.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- HAFTUNG -->
+        <section class="section" id="haftung" aria-label="Haftung">
+          <div class="head">
+            <div>
+              <h2>7. Haftungsbeschränkungen</h2>
+              <p class="sub">Umfang und Grenzen unserer Haftung.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Haftungsausschluss</strong>
+                <p>Spinando haftet unbeschränkt nur für Vorsatz und grobe Fahrlässigkeit. Bei leichter Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten) und begrenzt auf den bei Vertragsschluss typischerweise vorhersehbaren Schaden. Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit.</p>
+              </li>
+              <li>
+                <strong>Externe Links</strong>
+                <p>Für Inhalte externer Websites, auf die von unserer Plattform verlinkt wird, übernehmen wir keine Haftung.</p>
+              </li>
+              <li>
+                <strong>Verlust von Zugangsdaten</strong>
+                <p>Spinando übernimmt keine Haftung für Schäden, die durch den Missbrauch Ihrer Zugangsdaten entstehen, es sei denn, der Missbrauch wurde von uns oder unseren Erfüllungsgehilfen verschuldet.</p>
+              </li>
+              <li>
+                <strong>Spielsucht und finanzielle Verluste</strong>
+                <p>Sie erkennen an, dass Glücksspiel zu finanziellen Verlusten führen kann. Sie spielen auf eigenes Risiko. Spinando übernimmt keine Haftung für finanzielle Verluste, Spielsucht oder daraus resultierende persönliche Probleme. Wir bieten jedoch Tools für verantwortungsvolles Spielen an (Einzahlungslimits, Selbstausschluss etc.).</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- KONTOSPERRUNG -->
+        <section class="section" id="kontosperrung" aria-label="Kontosperrung">
+          <div class="head">
+            <div>
+              <h2>8. Kontosperrung, Vertragsbeendigung</h2>
+              <p class="sub">Unter welchen Umständen wir Ihr Konto sperren oder den Vertrag beenden können.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Ihr Kündigungsrecht</strong>
+                <p>Sie können Ihr Spielerkonto jederzeit ohne Angabe von Gründen schließen, indem Sie eine entsprechende Anfrage an unseren Support stellen. Vor der Schließung müssen alle offenen Wetten abgeschlossen und alle Bonusbedingungen erfüllt sein. Ein verbleibendes Guthaben wird gemäß Abschnitt 4 ausgezahlt.</p>
+              </li>
+              <li>
+                <strong>Unsere Kündigungsrechte</strong>
+                <p>Spinando kann das Vertragsverhältnis mit sofortiger Wirkung kündigen und Ihr Konto sperren, wenn:
+                  <ul>
+                    <li>Sie gegen diese AGB oder die spezifischen Spielregeln verstoßen.</li>
+                    <li>Sie eine falsche Identität angeben oder Ihr Konto nicht verifizieren.</li>
+                    <li>Sie Betrug, Geldwäsche oder Bonusmissbrauch begehen oder versuchen.</li>
+                    <li>Sie in einem Land ansässig sind, in dem unsere Dienste nicht angeboten werden dürfen.</li>
+                    <li>Wir aus sonstigen wichtigen Gründen zur sofortigen Beendigung berechtigt sind.</li>
+                  </ul>
+                </p>
+              </li>
+              <li>
+                <strong>Folgen einer Sperrung</strong>
+                <p>Im Falle einer Sperrung aufgrund eines Vertragsverstoßes behält sich Spinando das Recht vor, alle offenen Boni zu stornieren, Gewinne aus stornierten Boni einzubehalten und gegebenenfalls bereits getätigte Auszahlungen zurückzufordern. Die Auszahlung des Restguthabens (abzüglich strittiger Beträge) erfolgt nach Prüfung des Einzelfalls.</p>
+              </li>
+              <li>
+                <strong>Selbstausschluss</strong>
+                <p>Wir bieten ein Selbstausschlusssystem an. Wenn Sie sich selbst ausschließen, wird Ihr Konto für einen von Ihnen gewählten Zeitraum (mindestens 6 Monate) gesperrt. Während dieses Zeitraums können Sie keine Einzahlungen tätigen oder ein neues Konto eröffnen. Nach Ablauf der Frist können Sie die Wiedereröffnung beantragen.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- STREITBEILEGUNG -->
+        <section class="section" id="streitbeilegung" aria-label="Streitbeilegung">
+          <div class="head">
+            <div>
+              <h2>9. Streitbeilegung und anwendbares Recht</h2>
+              <p class="sub">Wie wir Streitigkeiten lösen und welches Recht gilt.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Beschwerdeweg</strong>
+                <p>Im Falle einer Beschwerde oder Unstimmigkeit wenden Sie sich bitte zunächst an unseren Kundensupport unter support@spinando.example. Wir bemühen uns, alle Streitigkeiten im direkten Gespräch beizulegen.</p>
+              </li>
+              <li>
+                <strong>Online-Streitbeilegung (OS-Plattform)</strong>
+                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a> finden. Wir sind weder verpflichtet noch bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+              </li>
+              <li>
+                <strong>Anwendbares Recht</strong>
+                <p>Das Vertragsverhältnis unterliegt dem Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG). Für Verbraucher, die ihren gewöhnlichen Aufenthalt in einem anderen EU-Land haben, bleiben die zwingenden Verbraucherschutzbestimmungen dieses Landes anwendbar.</p>
+              </li>
+              <li>
+                <strong>Gerichtsstand</strong>
+                <p>Sofern Sie Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen sind oder keinen allgemeinen Gerichtsstand in Deutschland haben, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag Berlin, Deutschland. Ansonsten bleibt das gesetzlich zuständige Gericht für Verbraucherstreitigkeiten maßgeblich.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- SCHLUSS -->
+        <section class="section" id="schluss" aria-label="Schlussbestimmungen">
+          <div class="head">
+            <div>
+              <h2>10. Schlussbestimmungen</h2>
+              <p class="sub">Formelle Abschlussbestimmungen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol class="terms-list">
+              <li>
+                <strong>Salvatorische Klausel</strong>
+                <p>Sollte eine Bestimmung dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle der unwirksamen Bestimmung tritt eine gesetzlich zulässige Regelung, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>
+              </li>
+              <li>
+                <strong>Vertragssprache</strong>
+                <p>Vertragssprache ist Deutsch.</p>
+              </li>
+              <li>
+                <strong>Vertragstextspeicherung</strong>
+                <p>Wir speichern den Vertragstext (diese AGB und Ihre Registrierungsdaten). Die AGB können Sie jederzeit auf dieser Seite abrufen und ausdrucken.</p>
+              </li>
+              <li>
+                <strong>Unabhängigkeit der Vertragsparteien</strong>
+                <p>Zwischen Ihnen und Spinando besteht kein Arbeits-, Agentur- oder Partnerschaftsverhältnis. Sie handeln stets als unabhängiger Kunde.</p>
+              </li>
+            </ol>
+            <div class="info-box">
+              <p><strong>Ende der Allgemeinen Geschäftsbedingungen.</strong><br>
+              Bei Fragen zu diesen AGB wenden Sie sich bitte an: support@spinando.example</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="foot">
+          <div>
+            <div style="font-weight:1100;">© <span id="y"></span> Spinando Informationsportal</div>
+            <div style="margin-top:6px;color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              Diese AGB sind Teil unseres Informationsangebots und gelten in Verbindung mit unseren Datenschutzbestimmungen.
+            </div>
+            <div class="legal">
+              <a href="/">Startseite</a><span style="opacity:.5">•</span>
+              <a href="/privacy-policy.html">Datenschutzerklärung</a><span style="opacity:.5">•</span>
+              <a href="/disclaimer.html">Disclaimer</a><span style="opacity:.5">•</span>
+              <a href="/responsible-gaming.html">Verantwortungsvolles Spielen</a>
+            </div>
+          </div>
+
+          <div>
+            <div style="color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              <strong>Gültig ab:</strong> 05. Januar 2026<br>
+              <strong>Version:</strong> 2.0
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="to-top" href="#intro" aria-label="Nach oben">↑</a>
+
+      <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+      </script>
+    </main>
+  </div>
+</body>
+</html>

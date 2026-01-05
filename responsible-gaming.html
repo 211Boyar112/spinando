@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Verantwortungsvolles Spielen – Hilfe & Schutz bei Spielsucht | Spinando</title>
+  <meta name="description" content="Verantwortungsvolles Spielen bei Spinando: Tools zur Spielkontrolle, Selbsttest, Warnsignale für Spielsucht und kostenlose Hilfsangebote in Deutschland." />
+  <link rel="canonical" href="https://spinando-casino.net/responsible-gaming.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Verantwortungsvolles Spielen – Hilfe & Schutz | Spinando" />
+  <meta property="og:description" content="Informationen und Tools für sicheres und kontrolliertes Spielen. Hilfsangebote bei Spielsucht." />
+  <meta property="og:url" content="https://spinando-casino.net/responsible-gaming.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg:#0b0716;
+      --bg2:#070515;
+      --panel:#120a2a;
+      --panel2:#140b2e;
+      --card:#1a0f3b;
+      --line:rgba(255,255,255,.10);
+      --text:#f6f3ff;
+      --muted:rgba(246,243,255,.78);
+      --muted2:rgba(246,243,255,.62);
+
+      --violet:#7c3aed;
+      --violet2:#5b21b6;
+      --pink:#ec4899;
+      --gold:#fbbf24;
+      --green:#22c55e;
+      --red:#ef4444;
+      --blue:#3b82f6;
+
+      --shadow:0 16px 44px rgba(0,0,0,.42);
+      --radius:18px;
+      --max:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 65% -10%, rgba(124,58,237,.30), rgba(0,0,0,0) 60%),
+        radial-gradient(900px 520px at -10% 25%, rgba(236,72,153,.16), rgba(0,0,0,0) 55%),
+        linear-gradient(180deg, var(--bg2), var(--bg) 55%, #08051a);
+    }
+
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--gold); text-decoration:underline}
+    img{max-width:100%;display:block}
+
+    .app{display:flex;min-height:100%}
+    .sidebar{
+      width:290px;
+      padding:16px 14px;
+      position:sticky; top:0; height:100vh;
+      background:linear-gradient(180deg, rgba(18,10,42,.92), rgba(7,5,21,.92));
+      border-right:1px solid var(--line);
+    }
+
+    .logo{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:1000;
+      letter-spacing:.2px;
+    }
+    .brand img{
+      width:38px; height:38px; border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .logo small{color:var(--muted2);font-weight:900}
+
+    .nav-box{
+      margin-top:14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .nav-box .h{
+      padding:10px 12px;
+      font-weight:1000;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.20), rgba(236,72,153,.08));
+    }
+    .nav-box a{
+      display:block;
+      padding:10px 12px;
+      color:rgba(246,243,255,.80);
+      border-top:1px solid rgba(255,255,255,.06);
+      font-weight:800;
+      font-size:13px;
+    }
+    .nav-box a:hover{background:rgba(255,255,255,.03)}
+
+    .side-note{
+      margin-top:14px;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .side-note .t{font-weight:1000}
+    .side-note .p{margin-top:6px;font-size:12px;color:var(--muted2);line-height:1.5}
+
+    .main{flex:1;min-width:0}
+    .topbar{
+      position:sticky; top:0; z-index:60;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:rgba(10,6,22,.70);
+      backdrop-filter:blur(10px);
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .top-actions{display:flex; gap:10px; align-items:center}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      font-weight:900;
+      color:rgba(246,243,255,.86);
+      white-space:nowrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:1000;
+      white-space:nowrap;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background:linear-gradient(180deg, rgba(34,197,94,1), rgba(34,197,94,.86));
+      border-color:rgba(0,0,0,.28);
+      color:#06140b;
+    }
+    .btn.help{
+      background:linear-gradient(180deg, rgba(59,130,246,1), rgba(59,130,246,.86));
+      border-color:rgba(0,0,0,.28);
+      color:#fff;
+    }
+
+    .container{max-width:var(--max); margin:0 auto; padding:18px 16px 28px}
+
+    .hero{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      background:
+        radial-gradient(900px 420px at 30% 10%, rgba(59,130,246,.34), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      margin-bottom:20px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:0;
+      min-height:180px;
+    }
+    .hero-left{
+      padding:22px 22px 18px;
+      background:linear-gradient(180deg, rgba(0,0,0,.52), rgba(0,0,0,.14));
+    }
+    h1{
+      margin:14px 0 0;
+      font-size:34px;
+      line-height:1.08;
+      letter-spacing:.2px;
+      font-weight:1100;
+    }
+    .hl{color:var(--blue)}
+    .hero-left p{
+      margin:12px 0 0;
+      color:rgba(246,243,255,.78);
+      font-size:14px;
+      line-height:1.6;
+      max-width:68ch;
+    }
+
+    .section{
+      margin-top:16px;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .section .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(59,130,246,.18), rgba(124,58,237,.08));
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .section h2{margin:0;font-size:18px;font-weight:1100}
+    .section .sub{margin:0;color:rgba(246,243,255,.70);font-size:13px;line-height:1.5;max-width:80ch}
+    .section .body{padding:14px 16px 16px}
+    p,li{color:rgba(246,243,255,.78);line-height:1.65;font-size:14px}
+    ul,ol{padding-left:22px;margin:12px 0}
+    li{margin-bottom:6px}
+    strong{color:var(--text); font-weight:1100}
+
+    .warning-box{
+      background:rgba(251,191,36,.10);
+      border:1px solid rgba(251,191,36,.30);
+      border-radius:16px;
+      padding:18px;
+      margin:20px 0;
+    }
+    .warning-box h3{
+      margin:0 0 10px 0;
+      color:var(--gold);
+      font-weight:1100;
+      font-size:16px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .warning-box h3:before{
+      content:"⚠";
+      font-size:18px;
+    }
+
+    .help-box{
+      background:rgba(59,130,246,.10);
+      border:1px solid rgba(59,130,246,.30);
+      border-radius:16px;
+      padding:18px;
+      margin:20px 0;
+    }
+    .help-box h3{
+      margin:0 0 10px 0;
+      color:var(--blue);
+      font-weight:1100;
+      font-size:16px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .help-box h3:before{
+      content:"🆘";
+      font-size:18px;
+    }
+
+    .tools-grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:12px;
+      margin-top:16px;
+    }
+    .tool-card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:16px;
+      padding:16px;
+      transition:transform 0.2s, border-color 0.2s;
+    }
+    .tool-card:hover{
+      transform:translateY(-2px);
+      border-color:rgba(59,130,246,.40);
+    }
+    .tool-card h3{
+      margin:0 0 8px 0;
+      font-size:16px;
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .tool-card p{
+      margin:0;
+      font-size:13px;
+      color:rgba(246,243,255,.74);
+    }
+
+    .test-list{
+      background:rgba(0,0,0,.20);
+      border-radius:16px;
+      padding:16px;
+      margin:16px 0;
+    }
+    .test-list li{
+      padding:8px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .test-list li:last-child{
+      border-bottom:none;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:12px;
+      margin-top:16px;
+    }
+    .contact-card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:16px;
+      padding:16px;
+    }
+    .contact-card h3{
+      margin:0 0 8px 0;
+      font-size:16px;
+      color:var(--text);
+    }
+    .contact-card .phone{
+      font-size:18px;
+      font-weight:1100;
+      color:var(--green);
+      margin:8px 0;
+    }
+    .contact-card .hours{
+      font-size:12px;
+      color:var(--muted2);
+      margin-top:4px;
+    }
+
+    footer{
+      margin-top:28px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.22);
+    }
+    .foot{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:18px 16px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    .legal{
+      display:flex; gap:10px; flex-wrap:wrap;
+      font-size:13px;
+      color:rgba(246,243,255,.70);
+      margin-top:10px;
+    }
+    .legal a:hover{text-decoration:underline}
+
+    .to-top{
+      position:fixed;
+      right:16px; bottom:16px;
+      width:46px; height:46px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(59,130,246,.18);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:var(--shadow);
+    }
+
+    @media (max-width: 980px){
+      .sidebar{display:none}
+      .foot{grid-template-columns:1fr}
+      .tools-grid{grid-template-columns: 1fr}
+      .contact-grid{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- LEFT -->
+    <aside class="sidebar" aria-label="Seitennavigation">
+      <div class="logo">
+        <div class="brand">
+          <img src="/images/logo.png" alt="Spinando Logo" onerror="this.style.display='none'">
+          <div>Spinando</div>
+        </div>
+        <small>Spielerschutz</small>
+      </div>
+
+      <div class="nav-box" aria-label="Navigation">
+        <div class="h">Schnellhilfe</div>
+        <a href="#warnsignale">Warnsignale erkennen</a>
+        <a href="#selbsttest">Kurz-Selbsttest</a>
+        <a href="#tools">Kontroll-Tools</a>
+        <a href="#selbstausschluss">Selbstausschluss</a>
+        <a href="#hilfe">Kostenlose Hilfe</a>
+        <a href="#tipps">Tipps für sicheres Spielen</a>
+        <a href="#notfall">Im Notfall</a>
+      </div>
+
+      <div class="side-note">
+        <div class="t">Soforthilfe</div>
+        <div class="p">
+          <strong>Kostenlose Hotline (Deutschland):</strong><br>
+          <span style="color:var(--green); font-weight:900;">0800 137 27 00</span><br>
+          Rund um die Uhr, anonym.
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <div style="font-weight:1000; font-size:15px;">Verantwortungsvolles Spielen</div>
+          <div class="top-actions">
+            <span class="pill">🇩🇪 DE</span>
+            <a class="btn help" href="#hilfe">Soforthilfe anrufen</a>
+            <a class="btn" href="/">Zurück zur Hauptseite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- HERO -->
+        <section class="hero" id="intro" aria-label="Hero">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <h1><span class="hl">Verantwortungsvoll</span> Spielen</h1>
+              <p>
+                Bei Spinando nehmen wir den Spielerschutz ernst. Glücksspiel soll unterhaltsam sein – aber es kann auch Risiken bergen. Auf dieser Seite finden Sie Informationen, Warnsignale, praktische Tools und kostenlose Hilfsangebote, um sicher und kontrolliert zu spielen.
+              </p>
+              <div class="help-box">
+                <h3>Wichtiger Hinweis</h3>
+                <p>Glücksspiel kann süchtig machen. Spielen Sie nur mit Geld, dessen Verlust Sie sich problemlos leisten können. Setzen Sie sich klare Limits und halten Sie sich daran. Wenn Sie das Gefühl haben, die Kontrolle zu verlieren – holen Sie sich Hilfe. Sie sind nicht allein.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WARNSIGNALE -->
+        <section class="section" id="warnsignale" aria-label="Warnsignale">
+          <div class="head">
+            <div>
+              <h2>Warnsignale für problematisches Spielverhalten</h2>
+              <p class="sub">Erkennen Sie frühzeitig, ob Ihr Spielverhalten riskant wird.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Pathologisches Glücksspiel entwickelt sich oft schleichend. Diese Warnsignale können auf ein problematisches Spielverhalten hindeuten:</p>
+            
+            <div class="warning-box">
+              <h3>Emotionale & Verhaltens-Warnsignale</h3>
+              <ul>
+                <li>Sie denken häufig ans Spielen oder planen Ihre nächste Spielsession.</li>
+                <li>Sie spielen, um Problemen, Ängsten oder depressiven Gefühlen zu entfliehen.</li>
+                <li>Sie fühlen sich unruhig oder gereizt, wenn Sie nicht spielen können.</li>
+                <li>Sie haben schon erfolglos versucht, weniger zu spielen oder aufzuhören.</li>
+                <li>Sie lügen gegenüber Familie oder Freunden über Ihr Spielverhalten oder die Höhe Ihrer Verluste.</li>
+              </ul>
+            </div>
+
+            <div class="warning-box">
+              <h3>Finanzielle & Soziale Warnsignale</h3>
+              <ul>
+                <li>Sie spielen mit immer höheren Beträgen, um den gleichen Nervenkitzel zu spüren.</li>
+                <li>Sie haben Schulden wegen des Spielens oder leihen sich Geld zum Spielen.</li>
+                <li>Sie vernachlässigen Arbeit, Ausbildung oder wichtige Pflichten wegen des Spielens.</li>
+                <li>Sie verlieren das Interesse an Hobbys oder sozialen Kontakten, die Ihnen früher Spaß gemacht haben.</li>
+                <li>Sie spielen, um frühere Verluste zurückzugewinnen ("Verlustjagd").</li>
+              </ul>
+            </div>
+
+            <p><strong>Wenn mehrere dieser Punkte auf Sie zutreffen, könnte Ihr Spielverhalten problematisch sein.</strong> Der folgende Kurztest gibt Ihnen eine erste Einschätzung.</p>
+          </div>
+        </section>
+
+        <!-- SELBSTTEST -->
+        <section class="section" id="selbsttest" aria-label="Selbsttest">
+          <div class="head">
+            <div>
+              <h2>Kurz-Selbsttest: Wie steht es um mein Spielverhalten?</h2>
+              <p class="sub">Beantworten Sie diese 5 Fragen ehrlich für sich selbst.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Dieser Test basiert auf international anerkannten Kriterien und dient der ersten Selbsteinschätzung. Er ersetzt keine professionelle Diagnose.</p>
+            
+            <div class="test-list">
+              <ol>
+                <li><strong>Haben Sie jemals länger oder mit höherem Einsatz gespielt als Sie sich vorgenommen hatten?</strong></li>
+                <li><strong>Haben Sie schon einmal gelogen, um Familie, Freunde oder Therapeuten über Ihr Spielverhalten zu täuschen?</strong></li>
+                <li><strong>Haben Sie schon wichtige Beziehungen, Ihre Arbeit oder Bildungschancen wegen des Spielens gefährdet oder verloren?</strong></li>
+                <li><strong>Haben Sie sich schon Geld leihen müssen oder finanzielle Verpflichtungen nicht einhalten können wegen Spielverlusten?</strong></li>
+                <li><strong>Spielen Sie manchmal, um vergangene Verluste zurückzugewinnen?</strong></li>
+              </ol>
+            </div>
+
+            <div class="help-box">
+              <h3>Auswertung des Selbsttests</h3>
+              <p><strong>0 "Ja"-Antworten:</strong> Ihr Spielverhalten scheint unproblematisch. Bleiben Sie wachsam.</p>
+              <p><strong>1-2 "Ja"-Antworten:</strong> Zeigen Sie erste Warnsignale. Setzen Sie sich klare Limits und beobachten Sie Ihr Verhalten.</p>
+              <p><strong>3-5 "Ja"-Antworten:</strong> Ihr Spielverhalten ist wahrscheinlich problematisch. <strong>Empfehlung:</strong> Nutzen Sie unsere Kontroll-Tools und ziehen Sie professionelle Hilfe in Betracht.</p>
+            </div>
+
+            <p>Für eine professionelle Diagnose wenden Sie sich bitte an eine der unten aufgeführten Beratungsstellen.</p>
+          </div>
+        </section>
+
+        <!-- TOOLS -->
+        <section class="section" id="tools" aria-label="Kontroll-Tools">
+          <div class="head">
+            <div>
+              <h2>Kontroll-Tools in Ihrem Spinando Konto</h2>
+              <p class="sub">Praktische Funktionen für sicheres und kontrolliertes Spielen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>In Ihrem Spinando Spielerkonto finden Sie unter "Einstellungen" oder "Verantwortungsvolles Spielen" verschiedene Tools, mit denen Sie Ihr Spielverhalten aktiv steuern können:</p>
+            
+            <div class="tools-grid">
+              <div class="tool-card">
+                <h3>📊 Einzahlungslimits</h3>
+                <p>Setzen Sie tägliche, wöchentliche oder monatliche Limits für Ihre Einzahlungen. Diese können jederzeit heraufgesetzt, aber erst nach einer Abkühlfrist (z.B. 24 Stunden) wieder gesenkt werden.</p>
+              </div>
+              <div class="tool-card">
+                <h3>⏰ Spielzeitlimits</h3>
+                <p>Begrenzen Sie Ihre tägliche oder wöchentliche Spielzeit. Das System unterbricht Sie mit einer Erinnerung, sobald Sie Ihr Limit erreicht haben.</p>
+              </div>
+              <div class="tool-card">
+                <h3>🔄 Reality Checks</h3>
+                <p>Lassen Sie sich in regelmäßigen Abständen (z.B. alle 30 oder 60 Minuten) anzeigen, wie lange Sie bereits spielen und wie viel Sie eingesetzt haben.</p>
+              </div>
+              <div class="tool-card">
+                <h3>⏸️ Spielpausen</h3>
+                <p>Legen Sie eine freiwillige Spielpause von 24 Stunden, 7 Tagen oder einem Monat ein. Während dieser Zeit können Sie nicht auf Ihr Konto zugreifen.</p>
+              </div>
+            </div>
+
+            <div class="info-box" style="background:rgba(124,58,237,.08); border-color:rgba(124,58,237,.20); margin-top:20px;">
+              <p><strong>So aktivieren Sie die Tools:</strong> Loggen Sie sich in Ihr Spinando Konto ein, gehen Sie zu "Mein Konto" → "Einstellungen" → "Verantwortungsvolles Spielen". Hier können Sie alle Limits nach Ihren Bedürfnissen konfigurieren.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SELBSTAUSSCHLUSS -->
+        <section class="section" id="selbstausschluss" aria-label="Selbstausschluss">
+          <div class="head">
+            <div>
+              <h2>Selbstausschluss (Self-Exclusion)</h2>
+              <p class="sub">Die stärkste Maßnahme zur Kontrolle Ihres Spielverhaltens.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wenn Sie das Gefühl haben, Ihre Spielgewohnheiten nicht mehr kontrollieren zu können, ist der Selbstausschluss eine wirksame Option. Spinando bietet verschiedene Stufen an:</p>
+
+            <h3>1. Temporärer Selbstausschluss</h3>
+            <p>Sie können sich für einen festgelegten Zeitraum von allen Spinando Diensten ausschließen:</p>
+            <ul>
+              <li><strong>6 Monate</strong> (Minimum)</li>
+              <li><strong>1 Jahr</strong></li>
+              <li><strong>5 Jahre</strong></li>
+            </ul>
+            <p>Während dieses Zeitraums können Sie sich nicht einloggen, Einzahlungen tätigen oder Spiele spielen. Eine vorzeitige Aufhebung ist <strong>nicht möglich</strong>.</p>
+
+            <h3>2. Dauerhafter Selbstausschluss</h3>
+            <p>Wenn Sie sich dauerhaft ausschließen möchten, wird Ihr Konto endgültig geschlossen. Eine Wiedereröffnung ist nicht möglich.</p>
+
+            <h3>3. OASIS (Online-Ausschluss-System)</h3>
+            <p>Spinando unterstützt branchenweite Ausschlusssysteme. Ein Ausschluss über OASIS gilt für alle teilnehmenden Online-Casinos gleichzeitig.</p>
+
+            <div class="warning-box">
+              <h3>Wichtige Informationen zum Selbstausschluss</h3>
+              <ul>
+                <li>Der Selbstausschluss ist verbindlich und kann während der Laufzeit nicht rückgängig gemacht werden.</li>
+                <li>Vor dem Ausschluss wird Ihr verbleibendes Guthaben ausgezahlt (sofern alle Bonusbedingungen erfüllt sind).</li>
+                <li>Sie erhalten während der Ausschlusszeit keine Werbe-E-Mails oder Bonusangebote von uns.</li>
+                <li>Nach Ablauf eines temporären Ausschlusses können Sie eine Wiedereröffnung beantragen. Es wird eine 24-stündige Abkühlfrist gelten.</li>
+              </ul>
+            </div>
+
+            <p><strong>So beantragen Sie einen Selbstausschluss:</strong> Kontaktieren Sie unseren Support per Live-Chat oder E-Mail an support@spinando.example. Alternativ finden Sie die Option in den Kontoeinstellungen unter "Verantwortungsvolles Spielen".</p>
+          </div>
+        </section>
+
+        <!-- HILFE -->
+        <section class="section" id="hilfe" aria-label="Kostenlose Hilfe">
+          <div class="head">
+            <div>
+              <h2>Kostenlose Hilfsangebote in Deutschland</h2>
+              <p class="sub">Professionelle Beratung und Unterstützung – anonym und kostenfrei.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wenn Sie Hilfe benötigen, stehen Ihnen in Deutschland verschiedene kostenlose und anonyme Angebote zur Verfügung:</p>
+
+            <div class="contact-grid">
+              <div class="contact-card">
+                <h3>Bundeszentrale für gesundheitliche Aufklärung (BZgA)</h3>
+                <p><strong>Telefonberatung:</strong></p>
+                <div class="phone">0800 137 27 00</div>
+                <p class="hours">Kostenlos, anonym, rund um die Uhr</p>
+                <p><strong>Online:</strong> www.check-dein-spiel.de<br>
+                <strong>E-Mail:</strong> beratung@check-dein-spiel.de</p>
+              </div>
+
+              <div class="contact-card">
+                <h3>Anonyme Spieler (Caritas & Diakonie)</h3>
+                <p><strong>Telefonberatung:</strong></p>
+                <div class="phone">0800 0 53 53 53</div>
+                <p class="hours">Kostenlos, anonym, Mo-Fr 10-22 Uhr</p>
+                <p><strong>Online:</strong> www.anonyme-spieler.de<br>
+                <strong>Chat & E-Mail:</strong> Über die Website</p>
+              </div>
+            </div>
+
+            <div class="contact-grid" style="margin-top:12px;">
+              <div class="contact-card">
+                <h3>Spielsucht-Therapie & Ambulanzen</h3>
+                <p>Für eine persönliche Therapie können Sie sich an diese Einrichtungen wenden:</p>
+                <ul>
+                  <li>Fachkliniken für Spielsucht</li>
+                  <li>Psychosoziale Beratungsstellen</li>
+                  <li>Ambulanzen an Universitätskliniken</li>
+                </ul>
+                <p>Ihr Hausarzt oder die BZgA-Hotline kann Ihnen Adressen in Ihrer Nähe nennen.</p>
+              </div>
+
+              <div class="contact-card">
+                <h3>Selbsthilfegruppen (Anonyme Spieler)</h3>
+                <p>Regelmäßige Treffen mit anderen Betroffenen:</p>
+                <ul>
+                  <li>In vielen Städten verfügbar</li>
+                  <li>Kostenlose Teilnahme</li>
+                  <li>Anonyme Atmosphäre</li>
+                </ul>
+                <p><strong>Termine finden:</strong> www.anonyme-spieler.de/selbsthilfegruppen</p>
+              </div>
+            </div>
+
+            <div class="help-box" style="margin-top:20px;">
+              <h3>Auch für Angehörige</h3>
+              <p>Sie sind besorgt um einen Freund oder Familienmitglied? Die Beratungsstellen helfen auch Angehörigen von Menschen mit Spielsucht. Sie erhalten Informationen und Unterstützung im Umgang mit der Situation.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- TIPPS -->
+        <section class="section" id="tipps" aria-label="Tipps für sicheres Spielen">
+          <div class="head">
+            <div>
+              <h2>10 Tipps für sicheres und kontrolliertes Spielen</h2>
+              <p class="sub">Praktische Regeln für einen gesunden Umgang mit Glücksspiel.</p>
+            </div>
+          </div>
+          <div class="body">
+            <ol>
+              <li><strong>Spielen Sie nur zum Spaß</strong> – nicht als Einnahmequelle oder um Probleme zu vergessen.</li>
+              <li><strong>Setzen Sie sich ein Budget</strong> bevor Sie anfangen zu spielen – und halten Sie sich daran. Spielen Sie nur mit Geld, dessen Verlust Sie sich leisten können.</li>
+              <li><strong>Verfolgen Sie nie Verluste</strong>. Erhöhen Sie nicht Ihre Einsätze in der Hoffnung, verlorenes Geld zurückzugewinnen.</li>
+              <li><strong>Betrachten Sie Verluste als Kosten für die Unterhaltung</strong> – wie beim Kinobesuch oder Konzert.</li>
+              <li><strong>Nutzen Sie unsere Kontroll-Tools</strong> (Einzahlungslimits, Spielzeitlimits, Reality Checks).</li>
+              <li><strong>Machen Sie regelmäßige Pausen</strong> während Ihrer Spielsitzungen.</li>
+              <li><strong>Vermeiden Sie Alkohol oder Drogen</strong> beim Spielen – sie beeinträchtigen Ihre Entscheidungsfähigkeit.</li>
+              <li><strong>Behalten Sie einen Ausgleich bei</strong> – pflegen Sie Hobbys, Sport und soziale Kontakte außerhalb des Spielens.</li>
+              <li><strong>Seien Sie ehrlich mit sich selbst</strong> – wenn Sie Warnsignale bemerken, handeln Sie frühzeitig.</li>
+              <li><strong>Merken Sie sich unsere Hilfetelefone</strong> – zögern Sie nicht, bei Bedarf anzurufen.</li>
+            </ol>
+
+            <div class="info-box" style="background:rgba(34,197,94,.10); border-color:rgba(34,197,94,.30); margin-top:20px;">
+              <h3 style="color:var(--green);">Grundregel für sicheres Spielen</h3>
+              <p>Wenn das Spielen aufhört, Spaß zu machen, oder wenn Sie anfangen, sich Sorgen über Ihr Spielverhalten zu machen – dann ist es Zeit, eine Pause einzulegen und gegebenenfalls Hilfe zu suchen.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- NOTFALL -->
+        <section class="section" id="notfall" aria-label="Im Notfall">
+          <div class="head">
+            <div>
+              <h2>Im Notfall – Soforthilfe</h2>
+              <p class="sub">Was tun, wenn die Situation akut ist?</p>
+            </div>
+          </div>
+          <div class="body">
+            <div class="warning-box">
+              <h3>Akute Krise oder Selbstmordgedanken?</h3>
+              <p><strong>Wenden Sie sich sofort an eine der folgenden Notfall-Hotlines:</strong></p>
+              <div style="margin:15px 0;">
+                <div style="font-size:20px; font-weight:1100; color:var(--red); margin-bottom:5px;">Telefonseelsorge</div>
+                <div style="font-size:24px; font-weight:1200; color:var(--text);">0800 111 0 111</div>
+                <div class="hours">oder 0800 111 0 222 • Rund um die Uhr • Kostenlos</div>
+              </div>
+              <div style="margin:15px 0;">
+                <div style="font-size:20px; font-weight:1100; color:var(--red); margin-bottom:5px;">Krisendienst (ärztlicher Bereitschaftsdienst)</div>
+                <div style="font-size:24px; font-weight:1200; color:var(--text);">116 117</div>
+              </div>
+              <p><strong>Bei akuter Selbst- oder Fremdgefährdung:</strong> Rufen Sie den <strong>Rettungsdienst unter 112</strong> oder gehen Sie in die nächste psychiatrische Notaufnahme.</p>
+            </div>
+
+            <h3>Sofortmaßnahmen für akute Spielsucht-Probleme</h3>
+            <ol>
+              <li><strong>Sofortiger Selbstausschluss:</strong> Nutzen Sie die Selbstausschluss-Funktion in Ihrem Spinando Konto oder kontaktieren Sie unseren Support.</li>
+              <li><strong>Zahlungsmethoden sperren:</strong> Kontaktieren Sie Ihre Bank oder Kreditkartenfirma und bitten Sie um Sperrung von Transaktionen an Glücksspielanbieter.</li>
+              <li><strong>Blockiersoftware installieren:</strong> Programme wie "Betfilter" oder "Gamblock" können den Zugang zu Glücksspielseiten auf Ihren Geräten blockieren.</li>
+              <li><strong>Vertrauensperson einweihen:</strong> Sprechen Sie mit einem Familienmitglied oder Freund, den Sie um Unterstützung bitten können.</li>
+              <li><strong>Professionelle Hilfe suchen:</strong> Rufen Sie eine der oben genannten Beratungsstellen an – noch heute.</li>
+            </ol>
+
+            <div class="help-box">
+              <h3>Erinnerung</h3>
+              <p>Spielsucht ist eine anerkannte Krankheit, für die es wirksame Behandlungen gibt. Es ist kein persönliches Versagen, Hilfe zu benötigen. Tausende Menschen haben mit professioneller Unterstützung ihr Spielverhalten wieder unter Kontrolle gebracht.</p>
+              <p style="margin-top:10px;"><strong>Der erste Schritt ist oft der schwerste – aber auch der wichtigste.</strong></p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="foot">
+          <div>
+            <div style="font-weight:1100;">© <span id="y"></span> Spinando Informationsportal</div>
+            <div style="margin-top:6px;color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              Wir bei Spinando unterstützen verantwortungsvolles Spielen. Diese Seite wird regelmäßig aktualisiert.
+            </div>
+            <div class="legal">
+              <a href="/">Startseite</a><span style="opacity:.5">•</span>
+              <a href="/terms.html">Allgemeine Geschäftsbedingungen (AGB)</a><span style="opacity:.5">•</span>
+              <a href="/privacy-policy.html">Datenschutzerklärung</a><span style="opacity:.5">•</span>
+              <a href="/disclaimer.html">Disclaimer & Haftungsausschluss</a>
+            </div>
+          </div>
+
+          <div>
+            <div style="color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              <strong>Letzte Aktualisierung:</strong> 05. Januar 2026<br>
+              <strong>Wichtige Notfallnummern:</strong><br>
+              Spielsucht-Hotline: 0800 137 27 00<br>
+              Telefonseelsorge: 0800 111 0 111
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="to-top" href="#intro" aria-label="Nach oben">↑</a>
+
+      <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+      </script>
+    </main>
+  </div>
+</body>
+</html>

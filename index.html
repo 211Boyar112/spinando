@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Spinando Casino – App, Events, Features & Bonus (DE)</title>
+  <meta name="description" content="Spinando Casino im Detail: Übersicht zu App, Bonus, Events, Spielen, Features und Support. Modernes Online-Casino mit Fokus auf Sicherheit und Spielspaß." />
+  <link rel="canonical" href="https://spinando-casino.net/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spinando Casino – App, Events & Features" />
+  <meta property="og:description" content="Entdecken Sie Spinando: Das moderne Online-Casino mit attraktivem Bonus, großer Spielauswahl und erstklassigem Support." />
+  <meta property="og:url" content="https://spinando-casino.net/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg:#0b0716;
+      --bg2:#070515;
+      --panel:#120a2a;
+      --panel2:#140b2e;
+      --card:#1a0f3b;
+      --line:rgba(255,255,255,.10);
+      --text:#f6f3ff;
+      --muted:rgba(246,243,255,.78);
+      --muted2:rgba(246,243,255,.62);
+
+      --violet:#7c3aed;
+      --violet2:#5b21b6;
+      --pink:#ec4899;
+      --gold:#fbbf24;
+      --green:#22c55e;
+
+      --shadow:0 16px 44px rgba(0,0,0,.42);
+      --radius:18px;
+      --max:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 65% -10%, rgba(124,58,237,.30), rgba(0,0,0,0) 60%),
+        radial-gradient(900px 520px at -10% 25%, rgba(236,72,153,.16), rgba(0,0,0,0) 55%),
+        linear-gradient(180deg, var(--bg2), var(--bg) 55%, #08051a);
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    .app{display:flex;min-height:100%}
+    .sidebar{
+      width:290px;
+      padding:16px 14px;
+      position:sticky; top:0; height:100vh;
+      background:linear-gradient(180deg, rgba(18,10,42,.92), rgba(7,5,21,.92));
+      border-right:1px solid var(--line);
+    }
+
+    .logo{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:1000;
+      letter-spacing:.2px;
+    }
+    .brand img{
+      width:38px; height:38px; border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .logo small{color:var(--muted2);font-weight:900}
+
+    .side-menu{margin-top:14px; display:grid; gap:8px}
+    .side-item{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid transparent;
+      background:rgba(255,255,255,.02);
+      color:rgba(246,243,255,.90);
+      font-weight:900;
+      font-size:14px;
+    }
+    .side-item:hover{border-color:rgba(255,255,255,.12); background:rgba(255,255,255,.04)}
+    .side-item .tag{font-size:12px; color:rgba(246,243,255,.60); font-weight:900}
+
+    .nav-box{
+      margin-top:14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .nav-box .h{
+      padding:10px 12px;
+      font-weight:1000;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.20), rgba(236,72,153,.08));
+    }
+    .nav-box a{
+      display:block;
+      padding:10px 12px;
+      color:rgba(246,243,255,.80);
+      border-top:1px solid rgba(255,255,255,.06);
+      font-weight:800;
+      font-size:13px;
+    }
+    .nav-box a:hover{background:rgba(255,255,255,.03)}
+
+    .side-note{
+      margin-top:14px;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+    }
+    .side-note .t{font-weight:1000}
+    .side-note .p{margin-top:6px;font-size:12px;color:var(--muted2);line-height:1.5}
+
+    .main{flex:1;min-width:0}
+    .topbar{
+      position:sticky; top:0; z-index:60;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:rgba(10,6,22,.70);
+      backdrop-filter:blur(10px);
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .top-links{display:flex; gap:14px; align-items:center; font-weight:900; color:rgba(246,243,255,.80)}
+    .top-links a{padding:6px 10px; border-radius:999px; border:1px solid transparent}
+    .top-links a:hover{border-color:rgba(255,255,255,.10)}
+    .top-actions{display:flex; gap:10px; align-items:center}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      font-weight:900;
+      color:rgba(246,243,255,.86);
+      white-space:nowrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:1000;
+      white-space:nowrap;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background:linear-gradient(180deg, rgba(34,197,94,1), rgba(34,197,94,.86));
+      border-color:rgba(0,0,0,.28);
+      color:#06140b;
+    }
+    .btn.login{
+      background:rgba(124,58,237,.14);
+      border-color:rgba(124,58,237,.25);
+    }
+
+    .container{max-width:var(--max); margin:0 auto; padding:18px 16px 28px}
+
+    .hero{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      background:
+        radial-gradient(900px 420px at 30% 10%, rgba(124,58,237,.34), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap:0;
+      min-height:340px;
+    }
+    .hero-left{
+      padding:22px 22px 18px;
+      background:linear-gradient(180deg, rgba(0,0,0,.52), rgba(0,0,0,.14));
+    }
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      font-weight:1000;
+      font-size:12px;
+      color:rgba(246,243,255,.86);
+    }
+    .kicker b{color:var(--gold)}
+    h1{
+      margin:14px 0 0;
+      font-size:34px;
+      line-height:1.08;
+      text-transform:uppercase;
+      letter-spacing:.2px;
+      font-weight:1100;
+    }
+    .hl{color:var(--gold)}
+    .hero-left p{
+      margin:12px 0 0;
+      color:rgba(246,243,255,.78);
+      font-size:14px;
+      line-height:1.6;
+      max-width:68ch;
+    }
+    .hero-ctas{margin-top:16px; display:flex; gap:10px; flex-wrap:wrap}
+    .hero-chips{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+    .chip{
+      font-size:12px;
+      font-weight:1000;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(124,58,237,.12);
+      color:rgba(246,243,255,.88);
+    }
+
+    .hero-right{
+      position:relative;
+      background:
+        radial-gradient(520px 520px at 70% 40%, rgba(255,255,255,.18), rgba(0,0,0,0) 60%),
+        linear-gradient(135deg, rgba(236,72,153,.18), rgba(124,58,237,.18));
+      display:flex;
+      align-items:stretch;
+      justify-content:stretch;
+    }
+    .hero-media{
+      width:100%;
+      height:100%;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .hero-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      border-radius:18px;
+      filter: drop-shadow(0 22px 38px rgba(0,0,0,.40));
+    }
+
+    .info-row{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:10px;
+    }
+    .info-pill{
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      padding:10px 12px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      box-shadow:0 10px 24px rgba(0,0,0,.22);
+    }
+    .info-pill .k{font-weight:1000;font-size:13px;color:rgba(246,243,255,.80)}
+    .info-pill .v{font-weight:1100;font-size:13px;color:rgba(246,243,255,.95)}
+    .info-pill .v b{color:var(--gold)}
+
+    .section{
+      margin-top:16px;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .section .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:linear-gradient(90deg, rgba(124,58,237,.18), rgba(236,72,153,.08));
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .section h2{margin:0;font-size:18px;font-weight:1100}
+    .section .sub{margin:0;color:rgba(246,243,255,.70);font-size:13px;line-height:1.5;max-width:80ch}
+    .section .body{padding:14px 16px 16px}
+    p,li{color:rgba(246,243,255,.78);line-height:1.65;font-size:14px}
+    ul{padding-left:18px;margin:10px 0}
+
+    .grid4{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:12px;
+      margin-top:12px;
+    }
+    .card{
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.18);
+      padding:12px;
+    }
+    .card h3{margin:0 0 6px;font-size:14px;font-weight:1100}
+    .card p{margin:0;font-size:13px;color:rgba(246,243,255,.74)}
+
+    .banner{
+      margin-top:12px;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,.10);
+      overflow:hidden;
+      background:linear-gradient(135deg, rgba(124,58,237,.20), rgba(236,72,153,.12));
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      min-height:180px;
+    }
+    .banner .left{padding:18px}
+    .banner .left .big{font-weight:1200;font-size:30px;line-height:1.05}
+    .banner .left .big b{color:var(--gold)}
+    .banner .left .small{margin-top:8px;color:rgba(246,243,255,.70);font-size:13px}
+    .banner .right{
+      background:rgba(0,0,0,.14);
+      display:flex; align-items:center; justify-content:center;
+      padding:14px;
+    }
+    .banner .right img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:16px;
+    }
+
+    /* FAQ */
+    .faq details{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.16);
+      border-radius:18px;
+      overflow:hidden;
+      margin-top:10px;
+    }
+    .faq summary{
+      cursor:pointer;
+      list-style:none;
+      padding:12px 14px;
+      font-weight:1100;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      background:rgba(124,58,237,.12);
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq .ans{
+      padding:12px 14px;
+      border-top:1px solid rgba(255,255,255,.10);
+      color:rgba(246,243,255,.78);
+      line-height:1.6;
+      font-size:14px;
+    }
+
+    footer{
+      margin-top:18px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.22);
+    }
+    .foot{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:18px 16px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    .legal{
+      display:flex; gap:10px; flex-wrap:wrap;
+      font-size:13px;
+      color:rgba(246,243,255,.70);
+      margin-top:10px;
+    }
+    .legal a:hover{text-decoration:underline}
+
+    .pay-logos{
+      display:flex; gap:14px; flex-wrap:wrap;
+      justify-content:flex-end; align-items:center;
+      opacity:.70;
+      filter:grayscale(100%);
+    }
+    .pay-logos img{height:18px}
+
+    .to-top{
+      position:fixed;
+      right:16px; bottom:16px;
+      width:46px; height:46px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(124,58,237,.18);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:var(--shadow);
+    }
+
+    @media (max-width: 1060px){
+      .grid4{grid-template-columns: repeat(2, 1fr)}
+      .info-row{grid-template-columns: repeat(2, 1fr)}
+      .banner{grid-template-columns: 1fr}
+      .pay-logos{justify-content:flex-start}
+    }
+    @media (max-width: 980px){
+      .sidebar{display:none}
+      .hero-grid{grid-template-columns: 1fr}
+      .top-links{display:none}
+      .foot{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- LEFT -->
+    <aside class="sidebar" aria-label="Seitennavigation">
+      <div class="logo">
+        <div class="brand">
+          <img src="/images/logo.png" alt="Spinando Logo" onerror="this.style.display='none'">
+          <div>Spinando</div>
+        </div>
+        <small>DE</small>
+      </div>
+
+      <div class="side-menu" aria-label="Seitenmenü">
+        <a class="side-item" href="#features">Alle Spiele <span class="tag">›</span></a>
+        <a class="side-item" href="#events">Turniere <span class="tag">›</span></a>
+        <a class="side-item" href="#actions">Aktionen & Bonus <span class="tag">›</span></a>
+        <a class="side-item" href="#vip">VIP-Programm <span class="tag">›</span></a>
+        <a class="side-item" href="#payments">Zahlungen <span class="tag">›</span></a>
+        <a class="side-item" href="#faq">FAQ <span class="tag">›</span></a>
+      </div>
+
+      <div class="nav-box" aria-label="Navigation">
+        <div class="h">Navigation</div>
+        <a href="#intro">Spinando im Überblick</a>
+        <a href="#features">Spiele & Features</a>
+        <a href="#events">Events & Turniere</a>
+        <a href="#app">Die Spinando App</a>
+        <a href="#support">Kundensupport</a>
+        <a href="#faq">Häufige Fragen</a>
+      </div>
+
+      <div class="side-note">
+        <div class="t">Sicherheit & Fairness</div>
+        <div class="p">
+          Spinando Casino operiert unter einer internationalen Lizenz und setzt auf modernste Verschlüsselungstechnologien für einen geschützten Spielbetrieb.
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <div class="top-links" aria-label="Top Links">
+            <a href="#actions">Bonus</a>
+            <a href="#app">App</a>
+            <a href="#features">Spiele</a>
+          </div>
+
+          <div class="top-actions">
+            <span class="pill">🇩🇪 Deutsch</span>
+            <a class="btn login" href="#support" rel="nofollow">Hilfe</a>
+            <a class="btn primary" href="#actions">Jetzt bei Spinando registrieren</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- HERO -->
+        <section class="hero" id="intro" aria-label="Hero">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <div class="kicker">Sicheres Casino in Deutschland <b>96 / 100</b></div>
+
+              <!-- H1 -->
+              <h1><span class="hl">Spinando</span>: Die moderne Casino-Plattform</h1>
+
+              <p>
+                Spinando casino hat sich als dynamische und innovative Plattform etabliert, die Spielspaß mit Sicherheit und einem modernen Design verbindet. Das Angebot richtet sich an Spieler, die eine ganzheitliche und unterhaltsame Gaming-Erfahrung schätzen. Dieser Überblick gibt Ihnen einen Eindruck davon, was Sie bei Spinando erwartet.
+              </p>
+
+              <div class="hero-ctas">
+                <a class="btn primary" href="#actions">Bonus sichern & registrieren</a>
+                <a class="btn" href="#features">Spiele entdecken</a>
+              </div>
+
+              <div class="hero-chips" aria-label="Chips">
+                <span class="chip">Spinando App</span>
+                <span class="chip">Willkommensbonus</span>
+                <span class="chip">Live-Casino</span>
+                <span class="chip">24/7 Support</span>
+              </div>
+            </div>
+
+            <div class="hero-right" aria-label="Hero Bild">
+              <div class="hero-media">
+                <!-- ВСТАВЬТЕ СЮДА вашу картинку (как персонаж справа на скрине) -->
+                <img src="/images/hero.jpg" alt="Spinando Casino Visual - Spieloberfläche" loading="lazy"
+                     onerror="this.style.display='none';">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- INFO ROW -->
+        <div class="info-row" aria-label="Kurzdaten">
+          <div class="info-pill"><div class="k">Zahlungen</div><div class="v">Krypto & <b>E-Wallets</b></div></div>
+          <div class="info-pill"><div class="k">Verfügbarkeit</div><div class="v"><b>Mobile</b> & Desktop</div></div>
+          <div class="info-pill"><div class="k">Support</div><div class="v">Deutsch 24/7</div></div>
+          <div class="info-pill"><div class="k">Spielauswahl</div><div class="v"><b>Riesig</b></div></div>
+        </div>
+
+        <!-- TEXT BLOCK: Überblick -->
+        <section class="section" aria-label="Überblick" id="intro-text">
+          <div class="head">
+            <div>
+              <h2>Spinando im Detail</h2>
+              <p class="sub">Was das Spinando casino zu einem bemerkenswerten Angebot macht.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Im Kern ist Spinando eine technologisch fortschrittliche Plattform, die auf Partnerschaften mit führenden Softwareanbietern setzt. Dies garantiert nicht nur eine immense Vielfalt an hochwertigen Spielen, sondern auch ein stabiles und faires Spielerlebnis. Die Nutzung von Spinando ist dank des responsiven Designs sowohl am Desktop als auch mobil ein Vergnügen.
+            </p>
+            <p>
+              Ein besonderer Fokus liegt auf einem mehrstufigen Bonus-System. Der Spinando bonus für neue Spieler bietet einen kraftvollen Start, während regelmäßige Aktionen und ein VIP-Programm die Langzeitmotivation fördern. Darüber hinaus wird großer Wert auf Transparenz und Spielerschutz gelegt, was sich in klaren Bedingungen und umfangreichen Tools für verantwortungsvolles Spielen widerspiegelt.
+            </p>
+          </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section" id="features" aria-label="Highlights">
+          <div class="head">
+            <div>
+              <h2>Die Highlights von Spinando</h2>
+              <p class="sub">Vier Säulen, die das Erlebnis bei Spinando ausmachen.</p>
+            </div>
+          </div>
+          <div class="body">
+            <div class="grid4">
+              <div class="card">
+                <h3>Exklusive Spielbereiche</h3>
+                <p>Spinando Spille umfassen spezielle Kategorien wie einen Krypto-Bereich und kuratierte Sammlungen von Top-Titeln, die für Abwechslung sorgen.</p>
+              </div>
+              <div class="card">
+                <h3>Vielfältige Zahlungsarten</h3>
+                <p>Von traditionellen Methoden bis hin zu modernen Kryptowährungen – Spinando bietet flexible Ein- und Auszahlungsoptionen für jeden Spielertyp.</p>
+              </div>
+              <div class="card">
+                <h3>Renommierte Anbieter</h3>
+                <p>Die Spielbibliothek wird durch Partnerschaften mit Größen wie NetEnt, Pragmatic Play und Evolution Gaming gespeist, was für Qualität und Innovation steht.</p>
+              </div>
+              <div class="card">
+                <h3>Deutschsprachiger Support</h3>
+                <p>Ein kompetentes Support-Team ist rund um die Uhr per Live-Chat und E-Mail erreichbar, um Fragen schnell und in der Muttersprache zu klären.</p>
+              </div>
+            </div>
+
+            <!-- BONUS BANNER -->
+            <div class="banner" id="actions" aria-label="Promo Banner" style="margin-top:14px;">
+              <div class="left">
+                <div class="big">Spinando Bonus: <b>100%</b> bis zu <b>500 €</b><br/>+ <b>150</b> Freispiele</div>
+                <div class="small">Ihr Willkommenspaket bei Spinando. Der perfekte Start, um die beliebtesten Slots und Tischspiele mit einem vergrößerten Budget kennenzulernen.</div>
+                <div style="margin-top:12px;">
+                  <a class="btn primary" href="#app">Jetzt Bonus beanspruchen</a>
+                </div>
+              </div>
+              <div class="right">
+                <!-- баннер-изображение -->
+                <img src="/images/bonus-banner.jpg" alt="Spinando Willkommensbonus Visual" loading="lazy" onerror="this.style.display='none'">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EVENTS -->
+        <section class="section" id="events" aria-label="Events & Turniere">
+          <div class="head">
+            <div>
+              <h2>Events & Turniere bei Spinando</h2>
+              <p class="sub">Regelmäßige Challenges mit hohen Preisgeldern und spannenden Wettbewerben.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Spinando casino belebt die Community mit einer stetig wechselnden Palette an Events. Diese reichen von Slot-Turnieren mit progressiven Jackpots über Blackjack-Challenges bis hin zu speziellen Wochenendaktionen. Die Teilnahme ist oft einfach und bietet die Chance auf zusätzliche Gewinne.</p>
+            <div class="grid4">
+              <div class="card">
+                <h3>Weekly Slot Race</h3>
+                <p>Spielen Sie ausgewählte Slots und sammeln Sie Punkte für den Leaderboard-Preispool.</p>
+              </div>
+              <div class="card">
+                <h3>Live Casino Masters</h3>
+                <p>Wetteifern Sie an den Live-Tischen um den Titel und exklusive Cash-Preise.</p>
+              </div>
+              <div class="card">
+                <h3>Freispiel-Freitage</h3>
+                <p>Spezielle Freitagsaktionen mit Freispielen auf beliebte neue Spielautomaten.</p>
+              </div>
+              <div class="card">
+                <h3>VIP High Roller</h3>
+                <p>Exklusive Turniere für Mitglieder des VIP-Programms mit besonders hohen Einsätzen und Rewards.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- APP -->
+        <section class="section" id="app" aria-label="App">
+          <div class="head">
+            <div>
+              <h2>Die Spinando App & Mobile Nutzung</h2>
+              <p class="sub">Spielen Sie flexibel von unterwegs – ohne Kompromisse bei Features oder Leistung.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Die Spinando App im weiteren Sinne ist eine perfekt optimierte mobile Webversion. Sie müssen nichts herunterladen, sondern grefen einfach über den Browser Ihres Smartphones oder Tablets auf die Plattform zu. Dies bietet entscheidende Vorteile:</p>
+            <ul>
+              <li><strong>Vollständiger Funktionsumfang:</strong> Sie haben Zugriff auf alle Spinando Spille, Ihre Kontoverwaltung, Bonusangebote und den Kundensupport – genau wie am Desktop.</li>
+              <li><strong>Sofortige Verfügbarkeit:</strong> Keine Updates nötig. Die neueste Version der Spinando App ist immer nur einen Klick entfernt.</li>
+              <li><strong>Plattformübergreifend:</strong> Egal ob iOS oder Android, die responsive Oberfläche passt sich automatisch an Ihr Gerät an und bietet eine intuitive Touch-Navigation.</li>
+              <li><strong>Sicherheit:</strong> Die mobile Nutzung ist genauso sicher wie die Desktop-Version, dank der gleichen Verschlüsselungsstandards.</li>
+            </ul>
+            <p>Die mobile Erfahrung bei Spinando casino ist darauf ausgelegt, ein flüssiges und unterhaltsames Spielerlebnis zu bieten, wann und wo immer Sie möchten.</p>
+          </div>
+        </section>
+
+        <!-- PAYMENTS -->
+        <section class="section" id="payments" aria-label="Zahlungen">
+          <div class="head">
+            <div>
+              <h2>Zahlungsmethoden bei Spinando</h2>
+              <p class="sub">Schnelle, sichere und flexible Transaktionen für deutsche Spieler.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Spinando vereinfacht Finanztransaktionen durch eine breite Auswahl an akzeptierten Zahlungswegen. Die Auszahlungsgeschwindigkeit variiert je nach gewählter Methode, ist aber in der Regel schnell.</p>
+            <p><strong>Beliebte Ein- & Auszahlungsoptionen:</strong></p>
+            <ul>
+              <li><strong>Kredit-/Debitkarten:</strong> Visa, Mastercard (Bearbeitung in der Regel innerhalb von 24 Stunden).</li>
+              <li><strong>E-Wallets:</strong> Skrill, Neteller, MiFinity, Trustly (oft innerhalb weniger Stunden bearbeitet).</li>
+              <li><strong>Banküberweisung:</strong> Klassische Überweisung (kann 2-4 Bankarbeitstage dauern).</li>
+              <li><strong>Kryptowährungen:</strong> Bitcoin (BTC), Tether (USDT) und andere (Extrem schnelle Transaktionen, oft in Minuten).</li>
+            </ul>
+            <p>Spinando casino erhebt in der Regel keine Gebühren für Ein- oder Auszahlungen. Bitte beachten Sie stets die aktuellen Bedingungen im Cashier-Bereich.</p>
+          </div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section class="section" id="support" aria-label="Support">
+          <div class="head">
+            <div>
+              <h2>Kundensupport bei Spinando</h2>
+              <p class="sub">Hilfe bei Fragen – schnell, kompetent und auf Deutsch.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Falls Fragen auftauchen, steht Ihnen der Spinando-Support auf mehreren Wegen zur Verfügung:</p>
+            <ul>
+              <li><strong>Live-Chat:</strong> Die schnellste Methode. Der Chat ist 24 Stunden am Tag, 7 Tage die Woche erreichbar und wird von deutschsprachigen Agents betreut.</li>
+              <li><strong>E-Mail-Support:</strong> Für nicht-dringende Anfragen oder das Zusenden von Dokumenten. Sie erhalten in der Regel innerhalb von 24 Stunden eine Antwort.</li>
+              <li><strong>Umfangreiche FAQ:</strong> Viele allgemeine Fragen zu Bonusbedingungen, Konto, Zahlungen und Spielen werden im Hilfebereich ausführlich beantwortet.</li>
+            </ul>
+            <p>Für eine reibungslose Hilfe wird empfohlen, bei kontospezifischen Fragen bereits eingeloggt zu sein oder Ihre Benutzerdaten bereitzuhalten.</p>
+          </div>
+        </section>
+
+        <!-- VIP -->
+        <section class="section" id="vip" aria-label="VIP">
+          <div class="head">
+            <div>
+              <h2>Das VIP-Programm von Spinando</h2>
+              <p class="sub">Exklusive Vorteile für treue Spieler.</p>
+            </div>
+          </div>
+          <div class="body">
+            <p>Das VIP-Programm bei Spinando casino belohnt kontinuierliches Spielen mit einer Reihe von besonderen Leistungen. Die Einladung erfolgt in der Regel auf Basis der Spielaktivität.</p>
+            <p><strong>Mögliche Vorteile für VIP-Mitglieder können sein:</strong></p>
+            <ul>
+              <li>Ein persönlicher Account Manager als direkter Ansprechpartner.</li>
+              <li>Höhere Auszahlungslimits und schnellere Bearbeitungszeiten für Auszahlungen.</li>
+              <li>Exklusive Bonusangebote, Reload-Boni und Cashback-Aktionen mit besseren Konditionen.</li>
+              <li>Einladungen zu besonderen Events, Turnieren und Giveaways.</li>
+              <li>Geschenke zu besonderen Anlässen.</li>
+            </ul>
+            <p>Details zum aktuellen Programm und den Einladungskriterien finden Sie nach dem Login in Ihrem Spinando Konto.</p>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq" id="faq" aria-label="FAQ">
+          <div class="head">
+            <div>
+              <h2>Häufig gestellte Fragen zu Spinando</h2>
+              <p class="sub">Kurze Antworten auf die wichtigsten Fragen rund um das Spinando casino.</p>
+            </div>
+          </div>
+          <div class="body">
+            <details>
+              <summary>Ist Spinando ein sicheres und seriöses Casino? <span>＋</span></summary>
+              <div class="ans">Ja. Spinando operiert unter einer international anerkannten Lizenz, nutzt SSL-Verschlüsselung zum Schutz aller Daten und lässt seine Spiele von unabhängigen Stellen auf Fairness prüfen. Zudem werden Werkzeuge für verantwortungsvolles Spielen angeboten.</div>
+            </details>
+            <details>
+              <summary>Wie kann ich den Spinando bonus erhalten? <span>＋</span></summary>
+              <div class="ans">Registrieren Sie sich als neuer Spieler bei Spinando, tätigen Sie Ihre erste Einzahlung und der Willkommensbonus wird Ihrem Konto gemäß den geltenden Bonusbedingungen gutgeschrieben. Stellen Sie sicher, dass Sie den Bonus gegebenenfalls aktiviert haben.</div>
+            </details>
+            <details>
+              <summary>Brauche ich eine separate Spinando app zum Download? <span>＋</span></summary>
+              <div class="ans">Nein. Spinando setzt auf eine responsive Web-App, die direkt im Browser Ihres Mobilgeräts funktioniert. Rufen Sie einfach die Spinando-Website auf, loggen Sie sich ein und spielen Sie – ohne Download und mit vollem Funktionsumfang.</div>
+            </details>
+            <details>
+              <summary>Welche Arten von Spielen (Spinando Spille) werden angeboten? <span>＋</span></summary>
+              <div class="ans">Das Angebot umfasst Hunderte von Slots (klassisch, Video, progressive), zahlreiche Varianten von Roulette, Blackjack, Poker und Baccarat sowie ein umfangreiches Live-Casino mit professionellen Dealern in Echtzeit.</div>
+            </details>
+            <details>
+              <summary>Wie lange dauert eine Auszahlung bei Spinando? <span>＋</span></summary>
+              <div class="ans">Die Dauer hängt von der gewählten Methode ab. E-Wallets und Kryptowährungen sind oft innerhalb weniger Stunden bis eines Tages verfügbar. Kreditkarten und Banküberweisungen können 1-5 Bankarbeitstage in Anspruch nehmen. Verifizierte Konten werden priorisiert bearbeitet.</div>
+            </details>
+          </div>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="foot">
+          <div>
+            <div style="font-weight:1100;">© <span id="y"></span> Spinando Informationsportal</div>
+            <div style="margin-top:6px;color:rgba(246,243,255,.62);font-size:12px;line-height:1.5;">
+              Diese Seite dient der neutralen Information über die Merkmale und Funktionen der Plattform Spinando.
+            </div>
+            <div class="legal">
+              <a href="/privacy-policy.html" >Datenschutz</a><span style="opacity:.5">•</span>
+              <a href="/terms.html" >AGB</a><span style="opacity:.5">•</span>
+              <a href="/disclaimer.html" >Disclaimer</a><span style="opacity:.5">•</span>
+              <a href="/responsible-gaming.html" >Verantwortungsvolles Spielen</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="pay-logos" aria-label="Payment logos (optional)">
+              <img src="/images/pay/visa.png" alt="Visa" onerror="this.style.display='none'">
+              <img src="/images/pay/mastercard.png" alt="Mastercard" onerror="this.style.display='none'">
+              <img src="/images/pay/skrill.png" alt="Skrill" onerror="this.style.display='none'">
+              <img src="/images/pay/neteller.png" alt="Neteller" onerror="this.style.display='none'">
+              <img src="/images/pay/bitcoin.png" alt="Bitcoin" onerror="this.style.display='none'">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="to-top" href="#intro" aria-label="Nach oben">↑</a>
+
+      <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+      </script>
+    </main>
+  </div>
+</body>
+</html>
